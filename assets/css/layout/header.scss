@@ -1,0 +1,121 @@
+.header {
+    overflow: inherit;
+    .button {
+
+            &__membership {
+            	font-family: 'Geogrotesque-Bold', sans-serif;
+                display: inline-block;
+                padding: 0.13em 1em;
+                border-radius: 4px;    
+                text-align: center;
+                border: 2px solid #87c358;
+                color: #87c358;
+                font-size: 16px;
+
+                @include breakpoint(600) {
+                    padding: 0.25em 0.7em;
+                }
+
+                span {
+                    @include min-breakpoint(600) {
+                	   margin-right: 5px;
+                    }
+                }
+                &--text {
+                    @include breakpoint(600) {
+                        display: none;
+                    }
+                }
+
+                @include breakpoint(400) {
+                	padding: 0.15em 0.5em;
+
+                	span { margin-right: 0; }
+                }
+
+                &:hover {
+                	color: #fff;
+                	background: #00578d;
+                    border-color: #00578d;
+
+                }
+            }
+            &__login {
+                padding-left: 1em;
+                padding-right: 1em;
+
+                @include breakpoint(400) {
+                    padding-left: 0.4em;
+                    padding-right: 0.4em;
+                }
+            }
+    }
+    .u-text-right {
+        position: relative;
+    }
+    .nav-link-user-avatar { 
+        display: block;
+        width: 40px;
+        height: 40px;
+        float: right;
+        text-align: center;
+        border-radius: 50%;
+        background: #f5f5f5;
+        align-self: center;
+       
+
+        img {
+            max-width: 19px;
+            margin-top: 7px;
+        }
+    }
+
+    .popover {
+        display: none;
+        padding: 20px;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        z-index: 100;
+        background: #fff;
+        -webkit-box-shadow: 0 2px 10px rgba(93, 92, 92, 0.3);
+        box-shadow: 0 2px 10px rgba(93, 92, 92, 0.3);
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            margin: 0 0 5px 0;
+        }
+        a {
+            color: $secondary_color;
+            font-family: $font_basic;
+
+            &:hover {
+                color: $danger_color;
+            }
+        }
+    }
+
+    .inner-popover {
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: -7px;
+            right: 10px;
+            width: 12px;
+            height: 12px;
+            border-left: 1px solid #f3f1f1;
+            border-top: 1px solid #f3f1f1;
+            background: #fff;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+    }
+}

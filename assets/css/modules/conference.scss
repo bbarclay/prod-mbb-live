@@ -1,0 +1,125 @@
+	.upt-conference {
+
+		.calendar {
+			text-align: center;
+			padding: 10px 0;
+			margin-bottom: 10px;	
+
+			&:after {
+				content: '';
+				clear: both;
+				display: block;
+			}	
+
+			.year {
+				font-family: $font_bold;
+			}
+
+			.date {
+				display: inline-block;
+			    width: 50px; 
+			    margin: 5px 0;
+			    position: relative;
+
+			    &:before {
+			    	content: '';
+				    position: absolute;
+				    top: -3px;
+				    left: 10px;
+				    width: 4px;
+				    height: 6px;
+				    background-color: #00bce4;
+				    z-index: 2;
+			    }
+			    &:after {
+				    content: '';
+				    position: absolute;
+				    top: -3px;
+				    right: 10px;
+				    width: 4px;
+				    height: 6px;
+				    background-color: #00bce4;
+				    z-index: 2;
+				}
+			}
+
+			.month {
+				display: block;
+			    background-color: #002749;
+			    color: #fff;
+			    font-family: $font_medium;
+			    font-size: 0.7em;
+			    padding: 5px 0 3px 0;
+			    border-top-left-radius: 3px;
+			    border-top-right-radius: 3px;
+			    text-transform: uppercase;	
+
+			    &.no-date {
+			    	background: $danger_color;
+			    }
+			}
+			.day {
+				display: block;
+			    padding: 0.4em 0.3em;
+			    font-family: $font_medium;
+			    font-size: 0.8em;
+			    border-bottom-left-radius: 5px;
+			    border-bottom-right-radius: 5px;
+			    background: #f5f5f5;			
+			}
+
+		}
+		.topic {
+			text-align: center;
+			line-height: 1;			
+		}
+		.button {
+			display: block;
+			margin: 0 auto;
+			max-width: 160px;
+			background-color: #7ac943;			
+		}
+		.heading {
+			text-transform: uppercase;
+			font-family: $font_medium;
+	    	text-align: center;
+		    margin: 0 0 20px 0;
+		    font-size: 27px;
+		    font-size: 1.5em;			
+		}
+	.addeventatc {
+		margin: 0 auto;
+	    margin: 0 auto;
+	    display: block;
+	    max-width: 175px;
+	    background: #79c142 !important;
+	    color: #fff !important;
+	    border: 0;
+
+	    &:hover,
+	    &:focus {
+	    	border: 0;
+	    }
+	}
+	.grid {
+
+		&__column {
+			width: 25%;
+			@include breakpoint(991) {
+				width: 50%;
+			}
+			@include breakpoint(767) {
+				width: 100%;
+			}
+		}
+	}
+	.group-btn {
+		text-align: center;
+		margin: 10px 0;
+	}
+
+
+}
+
+
+

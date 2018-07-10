@@ -1,0 +1,132 @@
+.useful-contacts-secion {
+	.link-to-contactform .btn {
+	    background: #0076c0;
+	    display: inline-block;
+	    padding: 5px 15px;
+	    border-radius: 5px;
+	    color: #fff;
+	    font-family: 'Geogrotesque-Bold', sans-serif;
+
+	    &:hover {
+		    background: #00578d;
+		}
+	}
+	.grid {
+		&--boxes {	
+			margin-top:  20px;
+		}
+	}
+}
+.single-contact {
+
+	.inner-bottom {
+		span {
+		    color: #a09e9e;
+		    min-width: 70px;
+		    display: block;
+		}
+	}
+}
+
+.member-contact-listing {
+	display: flex; 
+	flex-wrap: wrap;
+	margin: 0 -15px;
+
+	.contact-item {
+		width: 25%;
+		margin: 0;
+		padding: 10px;
+		display: flex;
+
+		@include breakpoint( 991 ) {
+			width: 25%;
+		}
+		@include breakpoint( 767 ) {
+			width: 33.3333%;
+		}
+		@include breakpoint( 600 ) {
+			width: 50%;
+		}
+
+		.inner {
+			border: 1px solid #f3f2f2;	
+			flex-wrap: wrap;
+			width: 100%;
+
+			&:after {
+				content: '';
+				clear: both;
+				display: block;
+			}
+		}
+		.image {
+			width: 100%;
+			height: 180px;
+		}
+		.detail {
+			width: 100%;
+			padding: 10px 15px;
+			min-height: 100px;
+			text-align: center;
+
+		}
+		h4 {
+			margin-bottom: 0;
+			font-size: 19px;
+		}
+
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0 0 5px 0;
+
+			li {
+				display: inline-block;
+				margin: 0 10px 0 0;
+				font-size: 14px;
+
+				&:nth-child(2) {
+					.fa {
+						font-size: 12px;
+					}
+				}
+			}
+			.fa {
+				margin-right: 5px;
+				color: #7ac143;
+			}
+		}
+		.state {
+		    font-size: 16px;
+
+		    .fa {
+		    	color: #ddd;
+		    	margin-right: 5px;
+		    }
+		}
+		p {
+			margin-bottom: 5px;
+			margin-left: 17px;
+			font-size: 15px;
+			line-height: 1.4;
+			color: #8e8d8d;
+
+			span {
+				color: #ddd;
+			}
+		}
+		.company-detail {
+			margin-top: 10px;
+			li {
+				display: block;
+
+				span:nth-child(1) {
+					color: #afaaaa;
+					width: 80px;
+					display: inline-block;
+				}
+			}
+		}
+	}
+}
