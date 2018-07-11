@@ -10,7 +10,7 @@ add_action( 'wp_enqueue_scripts', 'mbb_enqueue_styles' );
 // 1.1 -  Register Menu
 add_action( 'init', 'mbb_register_menu');
 add_action( 'wp_enqueue_scripts', 'mbb_dequeue_algolia_styles', 9999 );
-add_action( 'login_form_lostpassword', 'do_password_lost' );
+add_action( 'login_form_lostpassword', 'mbb_password_lost' );
 add_action( 'after_setup_theme', 'mbb_image_size' );
 
 /** =============================
@@ -52,7 +52,7 @@ function mbb_dequeue_algolia_styles() {
 /**
  * Initiates password reset.
  */
-function do_password_lost() {
+function mbb_password_lost() {
     if ( 'POST' == $_SERVER['REQUEST_METHOD'] ) {
         $errors = retrieve_password();
         if ( is_wp_error( $errors ) ) {
