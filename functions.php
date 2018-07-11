@@ -69,16 +69,3 @@ function do_password_lost() {
         exit;
     }
 }
-
-/**
- * Deregister matching post types.
- */
-function mbb_unregister_theme_post_types() {
-    global $wp_post_types;
-    foreach( array( 'bb_members' ) as $post_type ) {
-        if ( isset( $wp_post_types[ $post_type ] ) ) {
-            unset( $wp_post_types[ $post_type ] );
-        }
-    }
-}
-add_action( 'init', 'mbb_unregister_theme_post_types', 20 );

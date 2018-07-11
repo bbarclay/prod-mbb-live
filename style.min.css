@@ -925,11 +925,11 @@ input[type="submit"]:hover{background:#002749}
 .content-section .user-navigation{margin-bottom:20px;padding:10px 0}
 .content-section .user-navigation .list{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;margin:20px -10px}
 .content-section .user-navigation .list .item{width:25%;padding:0 10px;margin:10px 0}
-.content-section .user-navigation .list .item:nth-child(1) .item__link,.content-section .user-navigation .list .item:nth-child(6) .item__link{background:#002749}
-.content-section .user-navigation .list .item:nth-child(2) .item__link,.content-section .user-navigation .list .item:nth-child(7) .item__link{background:#f15d22}
-.content-section .user-navigation .list .item:nth-child(3) .item__link,.content-section .user-navigation .list .item:nth-child(8) .item__link{background:#0076c0}
-.content-section .user-navigation .list .item:nth-child(4) .item__link,.content-section .user-navigation .list .item:nth-child(9) .item__link{background:#79c142}
-.content-section .user-navigation .list .item:nth-child(5) .item__link,.content-section .user-navigation .list .item:nth-child(10) .item__link{background:#0076c0}
+.content-section .user-navigation .list .item .item__link{background:#0076c0}
+.content-section .user-navigation .list .item:nth-child(5n+1) .item__link{background:#002749}
+.content-section .user-navigation .list .item:nth-child(5n+2) .item__link{background:#f15d22}
+.content-section .user-navigation .list .item:nth-child(5n+3) .item__link{background:#0076c0}
+.content-section .user-navigation .list .item:nth-child(5n+4) .item__link{background:#79c142}
 .content-section .user-navigation .list .item__link{min-height:180px;padding:10px;text-align:center;border:1px solid #ecebeb;background:#fbfbfb;-webkit-transition:all .3s linear;transition:all .3s linear}
 .content-section .user-navigation .list .item__link:hover{border-radius:5px;background:#002749;box-shadow:2px 5px 20px rgba(206,205,205,0.8)}
 .content-section .user-navigation .list .item h3{margin:10px 0;font-size:20px;font-family:"Geogrotesque-SemiBold",sans-serif;color:#fff}
