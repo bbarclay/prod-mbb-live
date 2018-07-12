@@ -12,7 +12,7 @@ add_action( 'init', 'mbb_register_menu');
 add_action( 'wp_enqueue_scripts', 'mbb_dequeue_algolia_styles', 9999 );
 add_action( 'after_setup_theme', 'mbb_image_size' );
 
-add_action('wp_enqueue_scripts', 'mbb_check_shortcodes');
+//add_action('wp_enqueue_scripts', 'mbb_check_shortcodes');
 
 /** =============================
 * 2. ACTION
@@ -65,7 +65,7 @@ function mbb_check_shortcodes() {
     if (!has_shortcode($post->post_content, 'rpp_popup')) {
         add_action('wp_print_scripts', 'reset_password_deenqueue_scripts', 99999);
     }
-    if (!has_shortcode($post->post_content, 'frontendtodo') ) {
+    if (!has_shortcode($post->post_content, 'frontendtodo') || !has_shortcode($post->post_content, 'consultantviewtodo')) {
         add_action('wp_print_scripts', 'reset_todo_deenqueue_scripts', 99999);
         add_action('wp_print_styles', 'reset_todo_deenqueue_styles', 99999);
     }
