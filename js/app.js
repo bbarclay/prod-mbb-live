@@ -24,7 +24,7 @@
 
 	$('#bb-note').on('click', function(){
 
-		if( $(this).find('.text').hasclass('show') ) {
+		if( $(this).find('.text').hasClass('show') ) {
 
 			$(this).find('.text').addClass('show');
 
