@@ -28,46 +28,46 @@ get_header(); ?>
 
 							<?php while( have_rows('topics') ) : the_row();   ?>
 
-						
-							<?php 
-								$post_object = get_sub_field('item');
+								<?php if( get_sub_field('external_link') ) : ?>
 
-								if( $post_object ) : 
-
-									$post = $post_object;
-									setup_postdata( $post );  ?>
-
-									<div class="grid__column">
-										<div class="box">
-											<a href="<?php the_permalink(); ?>" class="box__link">
-												<div class="box__label">
-													<?php 
-															the_title(); 
-															wp_reset_postdata();
-																
-													?>
-												</div>
-											</a>
+										<div class="grid__column">
+											<div class="box">
+												<a href="<?php echo get_sub_field('link'); ?>" class="box__link">
+													<div class="box__label">
+														<?php 
+															echo get_sub_field('title'); 	
+														?>
+													</div>
+												</a>
+											</div>
 										</div>
-									</div>
+									
+								<?php else: ?>
 
+									<?php 
+										$post_object = get_sub_field('item');
 
-							<?php endif; ?>
+										if( $post_object ) : 
 
-							<?php if( get_sub_field('external_link') ) : ?>
+											$post = $post_object;
+											setup_postdata( $post );  ?>
 
-									<div class="grid__column">
-										<div class="box">
-											<a href="<?php echo get_sub_field('link'); ?>" class="box__link">
-												<div class="box__label">
-													<?php 
-														echo get_sub_field('title'); 	
-													?>
+											<div class="grid__column">
+												<div class="box">
+													<a href="<?php the_permalink(); ?>" class="box__link">
+														<div class="box__label">
+															<?php 
+																	the_title(); 
+																	wp_reset_postdata();		
+															?>
+														</div>
+													</a>
 												</div>
-											</a>
-										</div>
-									</div>
-							<?php endif; ?>
+											</div>
+				
+									<?php endif; ?>
+
+								<?php endif; ?>
 							
 							<?php endwhile; ?>
 
