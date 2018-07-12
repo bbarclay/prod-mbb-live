@@ -818,14 +818,6 @@
 input{background:#fff}
 input[type="submit"]{background:#79c142;border-radius:3px;font-family:"Geogrotesque-SemiBold",sans-serif}
 input[type="submit"]:hover{background:#002749}
-.reset-password-form{max-width:600px;border:1px solid #f1eeee;margin:50px auto;padding:30px}
-.reset-password-form input[type="text"]{width:100%;margin-bottom:10px}
-.reset-password-form input[type="submit"]{display:block;margin-top:20px;max-width:150px;border-radius:3px;margin:0 auto;background:#002749;color:#fff}
-#form-uptp .moonray-form{margin:0 auto;text-align:center;max-width:300px}
-#form-uptp label,#form-uptp select{font:normal normal 18px/1.3 'PT Sans',sans-serif}
-#form-uptp input[type="email"]{display:none}
-#form-uptp input[type="submit"]{background:#7ac143;display:inline-block;padding:.25em 1em;border-radius:4px;font-family:'Geogrotesque-Bold',sans-serif;text-align:center;color:#FFF;font-size:18px;height:auto;line-height:1.5}
-#form-uptp input[type="submit"]:hover{background:#002749}
 .breadcrumb{margin-bottom:10px}
 .breadcrumb ul{display:inline-block;margin:0;padding:0}
 .breadcrumb ul li{display:inline-block;margin-top:0}
@@ -1084,6 +1076,23 @@ input[type="submit"]:hover{background:#002749}
 .webinars-section .tab-info h2 span{display:inline-block;padding:10px 15px;background:#002749;color:#fff}
 .webinars-section .tab-info.active{display:block}
 .webinars-section .type{font-family:"Geogrotesque-Regular",sans-serif;color:#79c142;display:inline-block;margin-right:5px}
+.reset-password-form{max-width:600px;border:1px solid #f1eeee;margin:20px auto;padding:30px}
+.reset-password-form label{display:block}
+.reset-password-form p{margin-bottom:5px}
+.reset-password-form input[type="text"],.reset-password-form input[type="password"]{width:100%;margin-bottom:10px}
+.reset-password-form input[type="submit"]{display:block;margin-top:20px;border-radius:3px;margin:0 auto;background:#7ac143;color:#fff}
+.reset-password-form input[type="submit"]:hover{background:#002749}
+.reset-password-form .label{display:inline-block;padding:5px 10px;margin-bottom:10px;border-radius:3px}
+.reset-password-form .label.label-danger{background:rgba(241,93,34,0.4);color:#f15d22}
+.reset-password-form .label.label-success{background:rgba(122,193,67,0.4);color:#5c7d42}
+.reset-password-form .password_hint{color:#6f6c6c;line-height:1.3;font-size:16px;margin-bottom:15px}
+.rfp-success{text-align:center;margin:0;background:rgba(122,193,67,0.5);max-width:400px;margin:0 auto;padding:5px 10px}
+.rfp-error{text-align:center;margin:0;background:rgba(241,93,34,0.4);max-width:400px;margin:0 auto;padding:5px 10px}
+#form-uptp .moonray-form{margin:0 auto;text-align:center;max-width:300px}
+#form-uptp label,#form-uptp select{font:normal normal 18px/1.3 'PT Sans',sans-serif}
+#form-uptp input[type="email"]{display:none}
+#form-uptp input[type="submit"]{background:#7ac143;display:inline-block;padding:.25em 1em;border-radius:4px;font-family:'Geogrotesque-Bold',sans-serif;text-align:center;color:#FFF;font-size:18px;height:auto;line-height:1.5}
+#form-uptp input[type="submit"]:hover{background:#002749}
 @media only screen and (min-width:600px){.header .button__membership span{margin-right:5px}
 .toggle-info{display:none}
 }@media(min-width:768px){.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12{float:left}
