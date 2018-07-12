@@ -454,7 +454,7 @@
 						line-height: 1;
 					}
 			    }
-				svg {
+				svg, img {
 					max-width: 60px;
 					-webkit-transition: max-width 0.3s ease;
 					transition: max-width 0.3s ease;
@@ -472,7 +472,7 @@
 				&:hover {
 					cursor: pointer;
 
-					svg  { 
+					svg, img  { 
 						max-width: 70px;
 						.st0 {
 							fill: #fff;

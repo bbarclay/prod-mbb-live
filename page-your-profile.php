@@ -1,9 +1,5 @@
 <?php 
-/**
-*
-* Template Name: Profile
-*
-*/
+
 get_header(); 
 
 ?> 
@@ -14,7 +10,7 @@ get_header();
 	<section class="module module__membership">
 		<div class="container">
 			<div class="notes" id="bb-note"><span class="fa fa-exclamation-circle"></span><span class="text"> IMPORTANT: All Business Blueprint Members (Fast Track & Elite) can see the above contact information, so it's a matter of personal preference as to what you choose to share.</span></div> 
-			<?php echo do_shortcode('[MBB_contactInfo]') ?>	
+			<?php //echo do_shortcode('[MBB_contactInfo]') ?>	
 		</div>			
 	</section>
 
@@ -28,7 +24,12 @@ get_header();
 								<a href="<?php echo get_sub_field('link') ?>">
 								 <div class="item__link">
 								 	<h3><?php echo get_sub_field('title') ?></h3>
-								 	<?php echo get_sub_field('icon') ?>		
+								 	<?php 
+								 		$image = get_sub_field('icon'); 
+
+										echo wp_get_attachment_image($image['id'], 'full');
+								 	
+								 	?>		
 								 </div>
 								</a> 
 							</div>

@@ -1,7 +1,4 @@
 <?php
-/*
-Template Name: Reset Page
-*/
 
 get_header()
 ?>
