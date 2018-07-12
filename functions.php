@@ -65,7 +65,7 @@ function mbb_check_shortcodes() {
     if (!has_shortcode($post->post_content, 'rpp_popup')) {
         add_action('wp_print_scripts', 'reset_password_deenqueue_scripts', 99999);
     }
-    if (!has_shortcode($post->post_content, 'frontendtodo') || !has_shortcode($post->post_content, 'consultantviewtodo')) {
+    if (!has_shortcode($post->post_content, 'frontendtodo') ) {
         add_action('wp_print_scripts', 'reset_todo_deenqueue_scripts', 99999);
         add_action('wp_print_styles', 'reset_todo_deenqueue_styles', 99999);
     }
