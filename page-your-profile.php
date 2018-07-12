@@ -10,7 +10,7 @@ get_header();
 	<section class="module module__membership">
 		<div class="container">
 			<div class="notes" id="bb-note"><span class="fa fa-exclamation-circle"></span><span class="text"> IMPORTANT: All Business Blueprint Members (Fast Track & Elite) can see the above contact information, so it's a matter of personal preference as to what you choose to share.</span></div> 
-			<?php //echo do_shortcode('[MBB_contactInfo]') ?>	
+			<?php echo do_shortcode('[MBB_contactInfo]') ?>	
 		</div>			
 	</section>
 
