@@ -41,8 +41,12 @@
 						</div>
 
 
-	<?php 	
-					endif;
+			<?php  else: ?>
+					
+					<p>N/A</p>
+						
+				<?php
+				endif;
 			endwhile; 
 
 	      endif; ?>	

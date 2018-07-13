@@ -85,53 +85,46 @@
 
         	  			 	        if( ! get_sub_field('tbd') ) :
 
-        	  			 	        	
 
         	  			 	        	if( have_rows('add_to_calendar') ) {
 
         	  			 	        	  echo '<div class="calendar-button">';
         	  			 	        	  	
-        	  			 	        	  while( have_rows('add_to_calendar') ) : the_row();   
-
-        	  			 	        	  ?>
+        	  			 	        	  	while( have_rows('add_to_calendar') ) : the_row();   ?>
             	  			 	        		
-											<div title="Add to Calendar" class="addeventatc">
-											    Add to Calendar
-											    <span class="start"><?php 
-											    		if($total_days == 2  && $is_annual == false) {
-											    			$gold_start_date = date('m/d/Y h:i a', ( strtotime('+1 day', strtotime( get_sub_field('start_date') ) ) )  );
-											    			  echo $gold_start_date;	
-											    		}
-											    		else {
-											    			echo get_sub_field('start_date'); 
-											    		}
-											    ?></span>
-											    <span class="end"><?php 
-													   if($total_days == 2  && $is_annual == false) {
+												<div title="Add to Calendar" class="addeventatc">
+												    Add to Calendar
+												    <span class="start"><?php 
+												    		if($total_days == 2  && $is_annual == false) {
+												    			$gold_start_date = date('m/d/Y h:i a', ( strtotime('+1 day', strtotime( get_sub_field('start_date') ) ) )  );
+												    			  echo $gold_start_date;	
+												    		}
+												    		else {
+												    			echo get_sub_field('start_date'); 
+												    		}
+												    ?></span>
+												    <span class="end"><?php 
+														   if($total_days == 2  && $is_annual == false) {
+														   		$gold_end_date = date('m/d/Y h:i a', ( strtotime('-1 day', strtotime( get_sub_field('end_date') ) ) )  );
+												    			 echo $gold_end_date;	
+												    		}
+												    		else {
+												    			echo get_sub_field('end_date'); 
+												    		}
 
-													   	$gold_end_date = date('m/d/Y h:i a', ( strtotime('-1 day', strtotime( get_sub_field('end_date') ) ) )  );
+												    ?></span>
+												    <span class="timezone"><?php echo get_sub_field('timezone') ?></span>
+												    <span class="title"><?php the_sub_field('summary_of_the_event') ?></span>
+												    <span class="description"><?php echo get_sub_field('description_of_the_event') ?></span>
+												    <span class="location"><?php echo get_sub_field('location_of_the_event') ?></span>
+												</div>
 
-											    			  echo $gold_end_date;	
-											    		}
-											    		else {
-											    			echo get_sub_field('end_date'); 
-											    		}
+							<?php		  	endwhile;
 
-											    ?></span>
-											    <span class="timezone"><?php echo get_sub_field('timezone') ?></span>
-											    <span class="title"><?php the_sub_field('summary_of_the_event') ?></span>
-											    <span class="description"><?php echo get_sub_field('description_of_the_event') ?></span>
-											    <span class="location"><?php echo get_sub_field('location_of_the_event') ?></span>
-											</div>
-
-							<?php		  endwhile;
 										  echo '</div>';
 							            }
         	  			 	    	endif;
-        	  			   		endif;
-        	  			   		
-
-        	  			 ?>
+        	  			   		endif;    ?>
 
 
         	  			<?php if( get_sub_field('link') && ! get_sub_field('tbd') ) : ?> 

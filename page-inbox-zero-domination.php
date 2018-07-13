@@ -43,7 +43,7 @@ get_header(); ?>
 													<a href="<?php the_permalink(); ?>" class="box__link">
 														<div class="box__label">
 															<?php 
-																	the_title(); 
+																	echo  get_sub_field('title'); 
 																	wp_reset_postdata();		
 															?>
 														</div>
@@ -52,7 +52,7 @@ get_header(); ?>
 											</div>
 				
 										<?php 
-										
+
 										endif; ?>
 							
 							<?php endwhile; ?>
