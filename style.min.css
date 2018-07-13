@@ -98,7 +98,6 @@ input[type="submit"]:hover{background:#002749}
 .page-numbers{list-style:none;padding:0;margin:15px 0;text-align:center}
 .page-numbers li a,.page-numbers li span{padding:.25em .75em;border:1px solid #c7c8ca;color:#002749}
 .page-numbers li a.current,.page-numbers li a.dots,.page-numbers li span.current,.page-numbers li span.dots{color:rgba(47,47,47,0.5)}
-.site{overflow:inherit}
 .member-homepage{margin-top:0}
 .member-homepage .column-70{width:70%}
 .member-homepage .column-60{width:60%}
@@ -580,7 +579,7 @@ th.visible-xs,td.visible-xs{display:table-cell !important}
 .member-contact-listing .contact-item{width:33.3333%}
 .webinars-section .webinar .col-left{width:100%}
 .webinars-section .webinar .col-right{width:100%;border-top:1px solid #f1eded;border-left:0}
-}@media only screen and (max-width:600px){.header .button__membership{padding:.25em .7em}
+}@media only screen and (max-width:600px){.header .button__membership{padding:.35em .7em}
 .header .button__membership--text{display:none}
 .module__membership .profile__thumbnail--image{width:100%;height:160px}
 .module__membership .profile__info .label .text{font-size:15px}
@@ -608,9 +607,9 @@ th.visible-xs,td.visible-xs{display:table-cell !important}
 .module__membership .profile__info{width:calc(100% - 130px);padding:0 0 0 5px}
 }@media only screen and (max-width:480px){.module__membership .profile__membership{padding:15px 0}
 .module__membership .profile__membership .label{min-width:160px}
-}@media only screen and (max-width:400px){.header .button__membership{padding:.15em .5em}
+}@media only screen and (max-width:400px){.header .button__membership{padding:.4em .5em;font-size:14px}
 .header .button__membership span{margin-right:0}
-.header .button__login{padding-left:.4em;padding-right:.4em}
+.header .button__login{padding-left:.4em;padding-right:.4em;font-size:14px}
 }@media only screen and (max-width:350px){.module__membership .profile__thumbnail{width:130px;height:130px}
 .module__membership .profile__info{width:calc(100% - 130px);padding:0}
 .module__membership .profile__membership .label{min-width:100px}
