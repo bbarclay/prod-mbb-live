@@ -1,8 +1,8 @@
 <div class="upt-consultant">
 
- 	<?php $consultant = get_user_meta(get_current_user_id(), 'consultant', true ) ?>
+	<?php if( have_rows('consultants') ) :
 
-	<?php if( have_rows('consultants') ) : 
+			echo $consultant = do_shortcode('[mbb_your_consultant]'); 
 
 			while( have_rows('consultants') ) : the_row();   
 	
