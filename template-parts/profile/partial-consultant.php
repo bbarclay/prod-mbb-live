@@ -2,7 +2,7 @@
 
 
 	<?php 
-			echo $consultant = do_shortcode('[mbb_your_consultant]'); 
+			$consultant = do_shortcode('[mbb_your_consultant]'); 
 
 			if( have_rows('consultants') ) :
 

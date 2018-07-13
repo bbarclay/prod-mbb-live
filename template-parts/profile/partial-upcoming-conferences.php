@@ -4,7 +4,7 @@
 		                	  
     	<?php 
 
-	    	  echo $customer_type =  do_shortcode('[mbb_get_customer_type]'); 
+	    	  $customer_type =  do_shortcode('[mbb_get_customer_type]'); 
 
 	    	  if( $customer_type == 'Fasttrack Gold') {
 	    	  	$show_dates = 'conference_dates';
