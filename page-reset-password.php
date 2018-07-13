@@ -116,7 +116,7 @@ get_header()
 							<p class="password_hint"><?php echo __( 'Hint: The password should be at least twelve characters long. To make it stronger, use upper and lower case letters, numbers, and symbols like ! " ? $ % ^ &amp; ).' ) ?></p>
 						<p>
 							<input type="hidden" name="action" value="reset" />
-							<input type="submit" name="submit" value="Get New Password" class="button" id="submit" />
+							<input type="submit" name="submit" value="Update Password" class="button" id="submit" />
 						</p>
 				
 				</form>

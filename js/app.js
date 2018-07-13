@@ -24,13 +24,16 @@
 
 	$('#bb-note').on('click', function(){
 
+		console.log('test');
+
 		if( $(this).find('.text').hasClass('show') ) {
 
-			$(this).find('.text').addClass('show');
+			$(this).find('.text').removeClass('show');
+			
 
 		} else {
 
-			$(this).find('.text').removeClass('show');
+			$(this).find('.text').addClass('show');
 		}
 
 
