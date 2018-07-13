@@ -4,7 +4,7 @@
 		                	  
     	<?php 
 
-	    	  $customer_type =  do_shortcode('[BB_get_customer_type]'); 
+	    	  echo $customer_type =  do_shortcode('[mbb_get_customer_type]'); 
 
 	    	  if( $customer_type == 'Fasttrack Gold') {
 	    	  	$show_dates = 'conference_dates';
@@ -23,6 +23,9 @@
 	    	  else if ( $customer_type == 'Elite Platinum'  ) {
 	    	  	$show_dates = 'elite_conference_dates';
 	    	  	$total_days = 4;
+	    	  } else {
+
+	    	  	$show_date =  false;
 	    	  }
 
   
