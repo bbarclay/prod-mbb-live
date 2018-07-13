@@ -319,7 +319,7 @@ input[type="submit"]:hover{background:#002749}
 .webinars-section .reset-ul li:first-child a{background:#002749}
 .webinars-section .reset-ul li:last-child a{background:#f15d22}
 .webinars-section .reset-ul li a:hover{cursor:pointer;background:#002749;color:#fff}
-.webinars-section .webinar__dates{padding:10px;list-style:none;background:#f5f5f5}
+.webinars-section .webinar__dates{padding:0;list-style:none}
 .webinars-section .webinar__item{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;background:#fff;border:1px solid #f1eded}
 .webinars-section .webinar__item h3{margin-top:10px;margin-bottom:5px}
 .webinars-section .webinar .col-left{width:calc(100% - 250px);padding:20px 20px 20px 30px}

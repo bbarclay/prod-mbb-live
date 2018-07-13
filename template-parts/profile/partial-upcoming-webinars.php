@@ -14,6 +14,12 @@
 
 
 						$type = get_sub_field('webinar_type');
+
+						$webinar_date = strtotime(get_sub_field('date'));
+						$current_date = strtotime("now");
+
+
+						if($current_date <= $webinar_date) :
 					?>	
 
 						<li>
@@ -65,7 +71,10 @@
 							</div>
 						</li>
 
-					<?php endwhile; ?>	
+					<?php 
+						endif;
+
+					endwhile; ?>	
 
 					</ul>
 		<?php endif; ?>	
