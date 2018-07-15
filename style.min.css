@@ -217,7 +217,7 @@
 .extra-info .panel .label{display:block;padding:0 5px 0 0;color:#b9b8b8;font-size:13px;line-height:1}
 .extra-info .panel .text{display:block;padding:0 5px 0 0;text-align:left;color:#002749;font-size:17px}
 .extra-info .fa{float:right;font-size:12px;padding:8px;margin-top:2px;color:#626567}
-#search-results-hits .useful_contact_types:before,#search-results-hits .useful_contacts:before{content:'';background:url(assets/images/phone-book.svg) 0 0/cover no-repeat;width:50px;height:50px;position:absolute;top:0;left:0}
+#search-results-hits .useful_contact_types:before,#search-results-hits .useful_contacts:before{content:'';background:url(assets/images/contact.png) 0 0/cover no-repeat;width:50px;height:50px;position:absolute;top:0;left:0}
 #search-results-hits .useful_contact_types .search-result__details,#search-results-hits .useful_contacts .search-result__details{margin-left:60px}
 #search-results-hits .useful_contact_types .tag,#search-results-hits .useful_contacts .tag{display:none}
 .rp-first-login{position:fixed;z-index:10;top:0;left:0;width:100%;height:100%;text-align:center;background:rgba(49,48,48,0.8)}
