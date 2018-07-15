@@ -86,18 +86,6 @@
 .header .popover a{color:#002749;font-family:"Geogrotesque-Regular",sans-serif}
 .header .popover a:hover{color:#f15d22}
 .header .inner-popover:before{content:'';position:absolute;top:-7px;right:10px;width:12px;height:12px;border-left:1px solid #f3f1f1;border-top:1px solid #f3f1f1;background:#fff;-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);transform:rotate(45deg)}
-input{background:#fff}
-input[type="submit"]{background:#79c142;border-radius:3px;font-family:"Geogrotesque-SemiBold",sans-serif}
-input[type="submit"]:hover{background:#002749}
-.breadcrumb{margin-bottom:10px}
-.breadcrumb ul{display:inline-block;margin:0;padding:0}
-.breadcrumb ul li{display:inline-block;margin-top:0}
-.breadcrumb ul li a{margin-right:10px;font-family:"Geogrotesque-SemiBold",sans-serif}
-.breadcrumb ul li span{color:#a29e9e;font-family:"Geogrotesque-Regular",sans-serif}
-.breadcrumb ul li span .arrow{font-size:14px;color:#d8d4d4}
-.page-numbers{list-style:none;padding:0;margin:15px 0;text-align:center}
-.page-numbers li a,.page-numbers li span{padding:.25em .75em;border:1px solid #c7c8ca;color:#002749}
-.page-numbers li a.current,.page-numbers li a.dots,.page-numbers li span.current,.page-numbers li span.dots{color:rgba(47,47,47,0.5)}
 .member-homepage{margin-top:0}
 .member-homepage .column-70{width:70%}
 .member-homepage .column-60{width:60%}
@@ -363,6 +351,15 @@ input[type="submit"]:hover{background:#002749}
 #form-uptp input[type="email"]{display:none}
 #form-uptp input[type="submit"]{background:#7ac143;display:inline-block;padding:.25em 1em;border-radius:4px;font-family:'Geogrotesque-Bold',sans-serif;text-align:center;color:#FFF;font-size:18px;height:auto;line-height:1.5}
 #form-uptp input[type="submit"]:hover{background:#002749}
+.breadcrumb{margin-bottom:10px}
+.breadcrumb ul{display:inline-block;margin:0;padding:0}
+.breadcrumb ul li{display:inline-block;margin-top:0}
+.breadcrumb ul li a{margin-right:10px;font-family:"Geogrotesque-SemiBold",sans-serif}
+.breadcrumb ul li span{color:#a29e9e;font-family:"Geogrotesque-Regular",sans-serif}
+.breadcrumb ul li span .arrow{font-size:14px;color:#d8d4d4}
+.page-numbers{list-style:none;padding:0;margin:15px 0;text-align:center}
+.page-numbers li a,.page-numbers li span{padding:.25em .75em;border:1px solid #c7c8ca;color:#002749}
+.page-numbers li a.current,.page-numbers li a.dots,.page-numbers li span.current,.page-numbers li span.dots{color:rgba(47,47,47,0.5)}
 @media only screen and (min-width:600px){.header .button__membership span{margin-right:5px}
 .toggle-info{display:none}
 }@media(min-width:768px){.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12{float:left}
