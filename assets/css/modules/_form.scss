@@ -102,3 +102,11 @@
         }
     }
 }
+.mbb-form input[type="submit"] {
+    background: #79c142;
+    font-family: 'Geogrotesque-Bold', sans-serif;
+
+    &:hover {
+        background: #002749;
+    }
+}

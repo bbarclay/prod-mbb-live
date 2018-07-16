@@ -351,6 +351,8 @@
 #form-uptp input[type="email"]{display:none}
 #form-uptp input[type="submit"]{background:#7ac143;display:inline-block;padding:.25em 1em;border-radius:4px;font-family:'Geogrotesque-Bold',sans-serif;text-align:center;color:#FFF;font-size:18px;height:auto;line-height:1.5}
 #form-uptp input[type="submit"]:hover{background:#002749}
+.mbb-form input[type="submit"]{background:#79c142;font-family:'Geogrotesque-Bold',sans-serif}
+.mbb-form input[type="submit"]:hover{background:#002749}
 .breadcrumb{margin-bottom:10px}
 .breadcrumb ul{display:inline-block;margin:0;padding:0}
 .breadcrumb ul li{display:inline-block;margin-top:0}
@@ -360,6 +362,9 @@
 .page-numbers{list-style:none;padding:0;margin:15px 0;text-align:center}
 .page-numbers li a,.page-numbers li span{padding:.25em .75em;border:1px solid #c7c8ca;color:#002749}
 .page-numbers li a.current,.page-numbers li a.dots,.page-numbers li span.current,.page-numbers li span.dots{color:rgba(47,47,47,0.5)}
+.table-default-brand{border-spacing:0}
+.table-default-brand thead>tr>th{background:#f9f7f7;border-spacing:0;padding:5px;border-bottom:1px solid #ddd}
+.table-default-brand tr>td,.table-default-brand tr>td{padding:5px}
 @media only screen and (min-width:600px){.header .button__membership span{margin-right:5px}
 .toggle-info{display:none}
 }@media(min-width:768px){.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12{float:left}

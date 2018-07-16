@@ -1,0 +1,13 @@
+.table-default-brand {
+	border-spacing: 0;
+	thead > tr > th {
+	    background: #f9f7f7;
+	    border-spacing: 0;
+	    padding: 5px;
+	    border-bottom: 1px solid #ddd;
+	}
+	tr > td,
+	tr > td {
+		padding: 5px;
+	}
+}
