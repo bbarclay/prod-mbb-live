@@ -1,7 +1,7 @@
 <?php 
 
 /**
-* Template Name: Conference
+* Template Name: Conference Dates
 *
 **/
 
