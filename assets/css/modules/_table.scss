@@ -11,3 +11,15 @@
 		padding: 5px;
 	}
 }
+.table-responsive {
+
+	@include breakpoint(991){
+		overflow-x: auto;
+		width: 100%;
+		border: 1px solid #ddd;
+
+		table {
+			    min-width: 600px;
+		}
+	}
+}

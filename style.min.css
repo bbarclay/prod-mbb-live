@@ -562,6 +562,8 @@ th.visible-lg,td.visible-lg{display:table-cell !important}
 .upt-conference .grid__column{width:50%}
 .upt-consultant .info .info-right{padding-left:20px}
 .member-contact-listing .contact-item{width:25%}
+.table-responsive{overflow-x:auto;width:100%;border:1px solid #ddd}
+.table-responsive table{min-width:600px}
 }@media screen and (max-width:991px){.member-homepage .heading{margin-bottom:1.2em}
 .member-homepage .grid{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}
 .member-homepage .column-25{width:50%;-webkit-box-flex:1;-webkit-flex:auto;-ms-flex:auto;flex:auto}
