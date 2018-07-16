@@ -51,29 +51,26 @@ get_header()
 						$subject = '[My Business Blueprint] Your new password';
 						$sender = get_option('name');
 
-						function mbb_wp_email_content_type() {
-					        return 'text/html';
-					    }
+						// function mbb_wp_email_content_type() {
+					 //        return 'text/html';
+					 //    }
 
-					    add_filter( 'wp_mail_content_type', 'mbb_wp_email_content_type' );
+					 //    add_filter( 'wp_mail_content_type', 'mbb_wp_email_content_type' );
 
 
-						ob_start();
-							$GLOBALS["use_html_content_type"] = TRUE;
-							include('/emails/reset-password.php');
-							$message = ob_get_contents();
-	        			ob_end_clean();
+						// ob_start();
+						// 	$GLOBALS["use_html_content_type"] = TRUE;
+						// 	include('/emails/reset-password.php');
+						// 	$message = ob_get_contents();
+	     //    			ob_end_clean();
 
-						$mail = wp_mail( $to, $subject, $message );
+						// $mail = wp_mail( $to, $subject, $message );
 
-						remove_filter( 'wp_mail_content_type', 'mbb_wp_email_content_type' );
+						//remove_filter( 'wp_mail_content_type', 'mbb_wp_email_content_type' );
 
-						if( $mail ) {
-							$success = 'Check your email for you new password.';
-					
-						} else {
-							$success = 'Email not sent! But the password has been changed';
-						}
+						
+						$success = 'Password has been successfully changed';
+						
 
 					} else {
 						$error = 'Oops something went wrong updating your account.';
