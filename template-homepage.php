@@ -162,6 +162,7 @@ get_header(); ?>
             	  	$total_days = 4;
             	  } else {
             	  	$show_dates =  'elite_conference_dates';
+            	  	$total_days = 4;
             	  }
               
             	  	if(!empty($show_dates)) {
