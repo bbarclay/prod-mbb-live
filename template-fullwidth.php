@@ -13,12 +13,12 @@ get_header(); ?>
 			<h1 class="banner__title">
 				<?php the_title(); ?>
 			</h1>
-
 			<div class="banner__subtitle"></div>
 		</div>
 	</header>
-
-	<?php  the_content() ?>
+	<?php  
+	wp_reset_postdata();
+	the_content() ?>
 	
 
 </main>
