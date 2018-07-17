@@ -1,7 +1,7 @@
 <?php 
 
 /**
-* Template mame: Conference Dates
+* Template mame: Fullwidth
 *
 **/
 
