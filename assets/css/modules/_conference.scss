@@ -146,6 +146,8 @@
         background: #f9f7f7;
     }
     .cd-title {
+        font-family: $font_bold;
+
         text-transform: uppercase;
     }
     .cd-description,
@@ -163,13 +165,13 @@
     .video {
         min-height: 300px;
 
-        border: 1px solid #ddd;
+        border: 1px solid #f9f7f7;
     }
     .cd-button {
         text-align: center;
 
         .btn-addevent {
-            margin: 0 auto;
+            margin: 0 auto 20px 0;
 
             color: #fff;
             background: $success_color;
@@ -192,6 +194,19 @@
     background: #fbfbfb;
 }
 .cd-nav-section {
+    .cd-box-grid {
+        margin: 0 -5px;
+
+        flex-wrap: wrap;
+    }
+    .column {
+        width: 25%;
+        padding: 0 5px;
+
+        @include breakpoint(767) {
+            width: 50%;
+        }
+    }
     a {
         display: block;
         padding: 20px;
@@ -214,9 +229,6 @@
             padding: 40px 30px;
         }
     }
-    .inner-content {
-        max-width: 100%;
-    }
     ul {
         padding: 0;
         margin-top: 20px;
@@ -233,6 +245,8 @@
     }
 
     .table {
+        min-width: 900px;
+
         border: 1px solid #e8e2e2;
         box-shadow: 0 2px 10px #ddd;
         tr {
@@ -260,11 +274,80 @@
         }
     }
 }
-.cd-contact-person-section {
-    ul {
+.cd-venue-section {
+    .venue {
+        border: 1px solid #f1eeee;
+    }
+    .column {
         display: flex;
-        max-width: 400px;
-        padding: 0 10px;
+        width: 50%;
+
+        vertical-align: bottom;
+
+        align-items: center;
+        @include breakpoint(600) {
+            width: 100%;
+            min-height: 300px;
+        }
+        @include breakpoint(500) {
+            min-height: 200px;
+        }
+        @include breakpoint(400) {
+            min-height: 150px;
+        }
+        justify-content: center;
+    }
+    .venue {
+        h4 {
+            font-size: 26px;
+
+            color: #0076c0;
+        }
+        .venue-info {
+            padding: 40px 30px;
+        }
+        img {
+            height: auto;
+            max-width: 100%;
+
+            vertical-align: bottom;
+        }
+    }
+
+    ul {
+        padding: 0;
+        margin-top: 20px;
+
+        list-style: none;
+        li {
+            margin: 0;
+
+            strong {
+                display: inline-block;
+                min-width: 90px;
+            }
+        }
+    }
+}
+.cd-contact-person-section {
+    text-align: center;
+
+    .upt-consultant .info .info-left {
+        max-width: 235px;
+    }
+    .upt-consultant .info .info-right {
+        @include min-breakpoint(600) {
+            width: calc(100% - 235px);
+        }
+    }
+    .upt-consultant .info .name {
+        margin: 0;
+
+        border: 0;
+    }
+    .upt-consultant ul {
+        display: flex;
+        padding: 0;
         margin: 0 -5px 10px -5px;
 
         list-style: none;
@@ -275,10 +358,16 @@
 
         li {
             display: inline-block;
-            width: 50%;
+            width: 25%;
             padding: 0 5px;
             margin: 0 0 10px 0;
 
+            @include breakpoint(500) {
+                width: 50%;
+            }
+            @include breakpoint(767) {
+                width: 50%;
+            }
 
             &:nth-child(1) {
                 .btn {
@@ -307,7 +396,7 @@
                 font-family: $font_bold;
 
                 color: #fff;
-                border-radius: 5px;
+                border-radius: 4px;
 
                 &:hover {
                     background-color: $secondary_color;
@@ -397,16 +486,33 @@
         background: #f5f5f5;
     }
 }
-.cd-contact-person-section {
-    text-align: center;
 
-    ul {
-        margin: 0 auto;
-    }
-}
 .cd-accommodation-section {
     .embed-content {
+        margin-bottom: 20px;
+
         box-shadow: 0 5px 10px 0 #e0dada;
+    }
+    .single-accommodation {
+        margin: 20px 0;
+
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        background: #fff;
+        box-shadow: 0 2px 10px #efebeb;
+
+        .info {
+            padding: 20px;
+        }
+        h4 {
+            font-size: 22px;
+        }
+        .street {
+            margin-bottom: 20px;
+        }
+        span {
+            display: block;
+        }
     }
 }
 .cd-flights-section {
@@ -419,6 +525,13 @@
 
         li {
             display: inline-block;
+            margin: 5px;
+
+            @include breakpoint(530) {
+                display: block;
+                max
+                margin: 0 auto 10px 0;
+            }
         }
     }
     a {
@@ -427,7 +540,7 @@
         padding: 10px 20px;
 
         color: #fff;
-        border-radius: 3px;
+        border-radius: 4px;
         background: $success_color;
     }
 }
@@ -441,7 +554,12 @@
 
         li {
             display: inline-block;
-
+            margin-bottom: 0;
+            a {
+                display: inline-block;
+                min-width: 200px;
+                margin-bottom: 5px;
+            }
             &:nth-child(odd) {
                 a {
                     background-color: $danger_color;
@@ -455,7 +573,7 @@
         padding: 10px 20px;
 
         color: #fff;
-        border-radius: 3px;
+        border-radius: 4px;
         background: $secondary_color;
     }
 }
@@ -465,8 +583,8 @@
         width: 33.33333%;
         padding: 0 5px;
 
-        @include breakpoint(600) {
-            width: 50%;
+        @include breakpoint(500) {
+            width: 100%;
         }
         .inner {
             overflow: hidden;
@@ -474,7 +592,7 @@
             text-align: center;
 
             border: 1px solid #f1f0f0;
-            border-radius: 5px;
+            border-radius: 4px;
             background: #fff;
         }
 
@@ -495,6 +613,7 @@
             background: #084469;
         }
         ul {
+            min-height: 215px;
             padding: 0 20px;
 
             list-style: none;
@@ -514,7 +633,7 @@
             margin: 10px 10px;
 
             color: #fff;
-            border-radius: 3px;
+            border-radius: 4px;
             background: $success-color;
         }
     }
