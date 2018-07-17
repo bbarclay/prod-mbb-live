@@ -243,6 +243,7 @@
 .upt-conference .group-btn{margin:10px 0;text-align:center}
 .cd-banner{margin-bottom:0}
 .cd-section{padding:2em 0}
+.cd-section:active{outline:0}
 .cd-section:nth-child(odd){background:#f9f7f7}
 .cd-section .cd-title{font-family:"Geogrotesque-SemiBold",sans-serif;text-transform:uppercase}
 .cd-section .cd-description,.cd-section .cd-title{text-align:center}
