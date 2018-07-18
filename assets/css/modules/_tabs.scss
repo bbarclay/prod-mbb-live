@@ -1,70 +1,76 @@
 .tab {
-
-  &__navigation {
-      margin-top: 20px;
-      > div {
-          display: block;
-          padding: 10px 15px;
-
-          &.active {
-            border-radius: 3px;
-
-            span { color: $primary_color; }
-          }
-          &:hover {
-            cursor: pointer;
-
-            span {
-              color: $primary_color;
-            }
-          }
-
-          span {
-            display: block;
-            line-height: 24px;
-          }
-          img {
-            margin-right: 3px;
-            float: left;
-          }
-      }
-  }
-
-  &__content {
-      border-top: 1px solid #f3f2f2;
-      > div {
-        padding: 10px 0;
-        margin-bottom: 5px;
-        display: none;
-
+    &__navigation {
+        margin-top: 20px;
         > div {
-          margin-bottom: 3px;
-        }
+            display: block;
+            padding: 10px 15px;
 
             &.active {
-              display: block;
+                border-radius: 3px;
 
-                .text {
-                  color: $primary_color;
+                span {
+                    color: $primary_color;
+                }
+            }
+            &:hover {
+                cursor: pointer;
+
+                span {
+                    color: $primary_color;
                 }
             }
 
-            .label { 
-              display: block;
-              padding: 0 5px;
-              color: #b9b8b8;
-              font-size: 13px;
-              line-height: 1;
+            span {
+                display: block;
+
+                line-height: 24px;
+            }
+            img {
+                float: left;
+                margin-right: 3px;
+            }
+        }
+    }
+
+    &__content {
+        border-top: 1px solid #f3f2f2;
+        > div {
+            display: none;
+            padding: 10px 0;
+            margin-bottom: 5px;
+
+            > div {
+                margin-bottom: 3px;
+            }
+
+            &.active {
+                display: block;
+
+                .text {
+                    color: $primary_color;
+                }
+            }
+
+            .label {
+                display: block;
+                padding: 0 5px;
+
+                font-size: 13px;
+                line-height: 1;
+
+                color: #b9b8b8;
             }
             .text {
-              display: block;
-              padding: 0 5px;
-              text-align: left;
-              text-transform: capitalize;
-              color: $secondary_color;
-              font-size: 17px;
-            }
-      }
-  }
+                display: block;
+                padding: 0 5px;
 
+                font-size: 17px;
+
+                text-align: left;
+                text-transform: capitalize;
+
+                color: $secondary_color;
+            }
+        }
+    }
 }

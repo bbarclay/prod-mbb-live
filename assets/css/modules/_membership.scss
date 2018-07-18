@@ -67,15 +67,15 @@
 
                 text-align: center;
 
-                @include breakpoint(350) {
-                    width: 130px;
-                    height: 130px;
+                @include breakpoint(767) {
+                    width: 150px;
                 }
                 @include breakpoint(500) {
                     width: 130px;
                 }
-                @include breakpoint(767) {
-                    width: 150px;
+                @include breakpoint(350) {
+                    width: 130px;
+                    height: 130px;
                 }
                 &--image {
                     width: 100%;
@@ -84,12 +84,12 @@
                     background-repeat: no-repeat;
                     background-size: cover;
 
-                    @include breakpoint(500) {
-                        height: 150px;
-                    }
                     @include breakpoint(600) {
                         width: 100%;
                         height: 160px;
+                    }
+                    @include breakpoint(500) {
+                        height: 150px;
                     }
                 }
             }
@@ -100,16 +100,16 @@
 
                 word-break: break-word;
 
-                @include breakpoint(350) {
-                    width: calc(100% - 130px);
-                    padding: 0;
+                @include breakpoint(767) {
+                    width: calc(100% - 150px);
                 }
                 @include breakpoint(500) {
                     width: calc(100% - 130px);
                     padding: 0 0 0 5px;
                 }
-                @include breakpoint(767) {
-                    width: calc(100% - 150px);
+                @include breakpoint(350) {
+                    width: calc(100% - 130px);
+                    padding: 0;
                 }
 
                 > div > div:after {
@@ -165,9 +165,13 @@
                 border-top: 1px solid #f1f1f1;
                 background-color: $secondary_color;
 
-                @include breakpoint(350) {
-                    .label {
-                        min-width: 100px;
+                @include breakpoint(991) {
+                    padding: 15px 15px;
+                }
+                @include breakpoint(600) {
+                    > div {
+                        max-width: 350px;
+                        margin: 0 auto;
                     }
                 }
                 @include breakpoint(480) {
@@ -176,14 +180,10 @@
                         min-width: 160px;
                     }
                 }
-                @include breakpoint(600) {
-                    > div {
-                        max-width: 350px;
-                        margin: 0 auto;
+                @include breakpoint(350) {
+                    .label {
+                        min-width: 100px;
                     }
-                }
-                @include breakpoint(991) {
-                    padding: 15px 15px;
                 }
                 .label {
                     display: inline-block;
@@ -450,15 +450,15 @@
                 padding: 0 10px;
                 margin: 10px 0;
 
-                @include breakpoint(550) {
-                    width: 50%;
-                    padding: 0 5px;
+                @include breakpoint(991) {
+                    width: 25%;
                 }
                 @include breakpoint(767) {
                     width: 33.3333%;
                 }
-                @include breakpoint(991) {
-                    width: 25%;
+                @include breakpoint(550) {
+                    width: 50%;
+                    padding: 0 5px;
                 }
                 .item__link {
                     background: #0076c0;

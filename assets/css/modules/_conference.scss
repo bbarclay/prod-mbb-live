@@ -122,11 +122,11 @@
         &__column {
             width: 25%;
 
-            @include breakpoint(991) {
-                width: 50%;
-            }
             @include breakpoint(767) {
                 width: 100%;
+            }
+            @include breakpoint(991) {
+                width: 50%;
             }
         }
     }
@@ -288,15 +288,15 @@
         vertical-align: bottom;
 
         align-items: center;
-        @include breakpoint(400) {
-            min-height: 150px;
+        @include breakpoint(600) {
+            width: 100%;
+            min-height: 300px;
         }
         @include breakpoint(500) {
             min-height: 200px;
         }
-        @include breakpoint(600) {
-            width: 100%;
-            min-height: 300px;
+        @include breakpoint(400) {
+            min-height: 150px;
         }
         justify-content: center;
     }
@@ -365,10 +365,10 @@
             padding: 0 5px;
             margin: 0 0 10px 0;
 
-            @include breakpoint(767) {
+            @include breakpoint(500) {
                 width: 50%;
             }
-            @include breakpoint(500) {
+            @include breakpoint(767) {
                 width: 50%;
             }
 

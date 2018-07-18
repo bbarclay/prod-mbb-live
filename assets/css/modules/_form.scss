@@ -1,8 +1,9 @@
 .reset-password-form {
     max-width: 600px;
-    border: 1px solid #f1eeee;
-    margin: 20px auto;
     padding: 30px;
+    margin: 20px auto;
+
+    border: 1px solid #f1eeee;
 
     label {
         display: block;
@@ -11,90 +12,100 @@
         margin-bottom: 5px;
     }
     input {
-
-    	&[type="text"],
+        &[type="text"],
         &[type="password"] {
-    		width: 100%;
-    		margin-bottom: 10px;
-    	}
-    	&[type="submit"] {
-    		display: block;
-    		margin-top: 20px;
-    		border-radius: 3px;
-    		margin: 0 auto;
-    		background: #7ac143;
-    		color: #fff;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        &[type="submit"] {
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+
+            color: #fff;
+            border-radius: 3px;
+            background: #7ac143;
 
             &:hover {
                 background: #002749;
             }
-    	}
-
+        }
     }
     .label {
-       display: inline-block;
-       padding: 5px 10px;
-       margin-bottom: 10px;
-       border-radius: 3px;
+        display: inline-block;
+        padding: 5px 10px;
+        margin-bottom: 10px;
 
-       &.label-danger {
-          background: rgba(241, 93, 34, 0.4);
-          color: #f15d22;
-       }
+        border-radius: 3px;
+
+        &.label-danger {
+            color: #f15d22;
+            background: rgba(241, 93, 34, .4);
+        }
         &.label-success {
-          background: rgba(122, 193, 67, 0.4);
-          color: #5c7d42;
-       }
+            color: #5c7d42;
+            background: rgba(122, 193, 67, .4);
+        }
     }
     .password_hint {
-        color: #6f6c6c;
-        line-height: 1.3;
-        font-size: 16px;
         margin-bottom: 15px;
+
+        font-size: 16px;
+        line-height: 1.3;
+
+        color: #6f6c6c;
     }
 }
 .rfp-success {
-    text-align: center;
-    margin: 0;
-    background: rgba(122, 193, 67, 0.5);
     max-width: 400px;
-    margin: 0 auto;
     padding: 5px 10px;
+    margin: 0;
+    margin: 0 auto;
+
+    text-align: center;
+
+    background: rgba(122, 193, 67, .5);
 }
 .rfp-error {
-    text-align: center;
-    margin: 0;
-    background: rgba(241, 93, 34, 0.4);
     max-width: 400px;
-    margin: 0 auto;
     padding: 5px 10px;
+    margin: 0;
+    margin: 0 auto;
+
+    text-align: center;
+
+    background: rgba(241, 93, 34, .4);
 }
 
 #form-uptp {
     .moonray-form {
-        margin: 0 auto;
-        text-align: center;
         max-width: 300px;
+        margin: 0 auto;
+
+        text-align: center;
     }
     label,
     select {
-        font: normal normal 18px/1.3 'PT Sans', sans-serif;
+        font: normal normal 18px/1.3 "PT Sans", sans-serif;
     }
     input {
         &[type="email"] {
             display: none;
         }
         &[type="submit"] {
-            background: #7ac143;
             display: inline-block;
-            padding: 0.25em 1em;
-            border-radius: 4px;
-            font-family: 'Geogrotesque-Bold', sans-serif;
-            text-align: center;
-            color: #FFF;
-            font-size: 18px;
             height: auto;
+            padding: .25em 1em;
+
+            font-family: "Geogrotesque-Bold", sans-serif;
+            font-size: 18px;
             line-height: 1.5;
+
+            text-align: center;
+
+            color: #fff;
+            border-radius: 4px;
+            background: #7ac143;
 
             &:hover {
                 background: #002749;
@@ -103,8 +114,9 @@
     }
 }
 .mbb-form input[type="submit"] {
+    font-family: "Geogrotesque-Bold", sans-serif;
+
     background: #79c142;
-    font-family: 'Geogrotesque-Bold', sans-serif;
 
     &:hover {
         background: #002749;

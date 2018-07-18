@@ -21,13 +21,6 @@ get_header();
 	<section class="content-section">
 		<div class="container">  
 
-			<div class="breadcrumb">
-				<ul>
-					<li><a href="<?php echo site_url() ?>/your-profile">Membership Page</a><span class="arrow">&#187;</span></li>
-					<li><span><?php echo get_the_title() ?></span></li>
-				</ul>
-			</div>
-
 			<?php 
 				global $post;
     			$post_slug = $post->post_name;
@@ -74,8 +67,6 @@ get_header();
 
 		</div>
 	</section>
-
-
 </main>
 
 <?php get_footer(); ?>

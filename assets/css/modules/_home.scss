@@ -1,272 +1,310 @@
-	.member-homepage {
-		margin-top: 0em;
-	}
-	.member-homepage .column-70 {
-		width: 70%;
-	}
-	.member-homepage .column-60 {
-		width: 60%;
-	}
-	.member-homepage .column-25 {
-		width: 25%;
-	}
-	.member-homepage .column-50 {
-		width: 50%;
-	}
-	.member-homepage .column-40 {
-		width: 40%;
-	}
-	.member-homepage .column-30 {
-		width: 30%;
-	}
-	.member-homepage .column-33 {
-		width: 33.3333%;
-	}
-	.member-homepage .column-25 {
-		width: 25%;
-	}
-	.member-homepage .video {
-		width: 100%;
-    	position: relative;
-	    border: 1px solid #f5f3f3;
-	    border-radius: 3px;
-	    margin-top: 21px;
-	}
-	.member-homepage .lists {
-		list-style: none;
-		padding: 0;
-		
-	}
-	.member-homepage .lists .item .video {
-		float: left;
-		width: 50%;
-		padding-top: 0;
-		overflow: hidden;
-		border: 1px solid #f3f3f3;
+    .member-homepage {
+    margin-top: 0;
+}
+.member-homepage .column-70 {
+    width: 70%;
+}
+.member-homepage .column-60 {
+    width: 60%;
+}
+.member-homepage .column-25 {
+    width: 25%;
+}
+.member-homepage .column-50 {
+    width: 50%;
+}
+.member-homepage .column-40 {
+    width: 40%;
+}
+.member-homepage .column-30 {
+    width: 30%;
+}
+.member-homepage .column-33 {
+    width: 33.3333%;
+}
+.member-homepage .column-25 {
+    width: 25%;
+}
+.member-homepage .video {
+    position: relative;
 
-	}
-	.member-homepage .list .presenter {
-		margin-top: 0;
-	}
-	.member-homepage .lists .item .details {
-	    border-bottom:1px solid #f6f7f9;
-	    padding: 0.32em 0;
-	}
-	.member-homepage .lists .item {
-		margin: 1px 0 0 0;
-	}
-	.member-homepage .lists .item .presenter a {
-		color: #f15d22;
-		font-family: 'Geogrotesque-Medium', sans-serif;
-	}
-	.member-homepage .lists .details h3 {
-		margin-bottom: 0;
-		font-size: 1.42em;
-	}
-	.member-homepage .lists .details h3 a {
-	    font-size: 0.845em;
-	    color: #002749;
-	    line-height: 1.05;
-	    display: block;
-	    font-family: 'Geogrotesque-Medium', sans-serif;
-	}
-	.member-homepage .lists .item:after {
-		content: '';
-		clear: both;
-		display: block;
-	}
+    width: 100%;
+    margin-top: 21px;
 
-	.member-homepage .sidebar-heading {
-	    text-transform: uppercase;
-	    font-size: 1.6em;
-	    color: #002749;
-	    font-family: 'Geogrotesque-SemiBold', sans-serif;
-	    display: inline-block;
-	    margin: 0;
-	}
-	.member-homepage .video-section .heading {
-		text-align: left;
-		text-transform: uppercase;
-		margin: 0 0 10px 0;
-	    font-size: 27px;
-	    font-size: 1.5em;
-	}
-	.member-homepage .video-section .heading span {
-		color: #00bcff;
-	}
-	.video-section {
-		padding-bottom: 3em;
-	}
-	.featured-posts {
-	    background: #f9f8f8;
-	    padding-top: 2em;
-	}
-	.member-homepage .blog {
-		margin-bottom: 2em;
-		background: #fff;
-		background: #fff;
-    	overflow: hidden;
-    	-webkit-box-shadow: 0 1px 6px #e6e4e4;
-		border-bottom-left-radius: 3px;
-		border-bottom-right-radius: 3px;
-	} 
-	.member-homepage .featured-posts .blog h3 {
-	    font-size: 1.4em;
-	    margin: 0 0 5px 0;
-	    font-family: 'Geogrotesque-Regular', sans-serif;
-	    line-height: 1.2;
-	}
-	.member-homepage .blog h3 a {
-		color: #002749;
-	}
-	.member-homepage .blog .thumbnail {
-		width: 100%;
-		padding-top: 56.25%;
-	}
-	.member-homepage .blog .info {
-		padding: 20px 15px;
-		font-family: "Geogrotesque-Medium",sans-serif;
-		font-size: 1em;
-		color: #f15d22;
-		min-height: 70px;
-	}
+    border: 1px solid #f5f3f3;
+    border-radius: 3px;
+}
+.member-homepage .lists {
+    padding: 0;
 
-	.member-homepage .calendar {
-		text-align: center;
-		padding: 10px 0;
-		margin-bottom: 10px;
-	}
-	.member-homepage .calendar:after {
-		content: '';
-		clear: both;
-		display: block;
-	}
-	.member-homepage .calendar .year {
+    list-style: none;
+}
+.member-homepage .lists .item .video {
+    float: left;
+    width: 50%;
+    padding-top: 0;
+    overflow: hidden;
 
-    	font-family: 'Geogrotesque-SemiBold', sans-serif;
+    border: 1px solid #f3f3f3;
+}
+.member-homepage .list .presenter {
+    margin-top: 0;
+}
+.member-homepage .lists .item .details {
+    padding: .32em 0;
 
-	}
-	.member-homepage .calendar .date {
-		display: inline-block;
-	    width: 50px; 
-	    margin: 5px 0;
-	    position: relative;
-	}
-	.member-homepage .calendar .date:before {
-	    content: '';
-	    position: absolute;
-	    top: -3px;
-	    left: 10px;
-	    width: 4px;
-	    height: 6px;
-	    background-color: #00bce4;
-	    z-index: 2;
-	}
-	.member-homepage .calendar .date:after {
-	    content: '';
-	    position: absolute;
-	    top: -3px;
-	    right: 10px;
-	    width: 4px;
-	    height: 6px;
-	    background-color: #00bce4;
-	    z-index: 2;
-	}
-	.calendar .month.no-date {
-		background-color: #f15d22;
-	}
-	.calendar .month {
-	    display: block;
-	    background-color: #002749;
-	    color: #fff;
-	    font-family: 'Geogrotesque-Medium', sans-serif;
-	    font-size: 0.7em;
-	    padding: 5px 0 3px 0;
-	    border-top-left-radius: 3px;
-	    border-top-right-radius: 3px;
-	    text-transform: uppercase;
-	}
-	.member-homepage .calendar .day {
-	    display: block;
-	    padding: 0.4em 0.3em;
-	    font-family: 'Geogrotesque-Medium', sans-serif;
-	    font-size: 0.8em;
-	    border-bottom-left-radius: 5px;
-	    border-bottom-right-radius: 5px;
-	    background: #f5f5f5;
-	}
-	.member-homepage .calendar .addeventatc {
-		margin: 0 auto;
-    	width: 167px;
-    	display: block;
-	}
-	.member-homepage .topic {
-		text-align: center;
-		line-height: 1;
-	}
-	.member-homepage .member-homepage .button  {
-		display: block;
-		margin: 0 auto;
-		max-width: 160px;
-		background-color: #7ac943;
-	}
-	.member-homepage .heading {
-		text-transform: uppercase;
-		font-family: 'Geogrotesque-SemiBold', sans-serif;
-    	text-align: center;
-	    margin: 0 0 20px 0;
-	    font-size: 27px;
-	    font-size: 1.5em;
-	}
-	.member-homepage .addeventatc {
-	    margin: 0 auto;
-	    display: block;
-	    max-width: 175px;
-	    background: #79c142 !important;
-	    color: #fff !important;
-	    border: 0;
-	}
-	.member-homepage .conference {
-		padding: 2em 0 0 0;
-	}
-	@media screen and ( max-width: 1070px ) {
-		.member-homepage .column-30, 
-		.member-homepage .column-70 {
-			width: 100%;
-		}
-		.member-homepage .video {
-		    margin-bottom: 30px;
-		}
-		.member-homepage .lists .details h3 a {
-	    	font-size: 1em;
-		}
-		.member-homepage .video-section {
-		    padding-bottom: 1em;
-		}
-		.member-homepage .featured-posts .blog h3 {
-		    font-size: 1.5em;
-		    min-height: 50px;
-		}
-		.member-homepage .column-25 {
-			margin-bottom: 1.5em;
-		}
-	}
-	@media screen and ( max-width: 991px ) {
-		.member-homepage .heading {
-		    margin-bottom: 1.2em;
-		}
-		.member-homepage .grid {
-		    display: flex;
-		    flex-wrap: wrap;
-		}
-		.member-homepage .column-25 {
-			width: 50%;
-			flex: auto;
-		}
-	}
-	@media screen and ( max-width: 767px ) {
-		.member-homepage .column-25,
-		.member-homepage .column-50 {
-			 width: 100%;
-		}
-	}
+    border-bottom: 1px solid #f6f7f9;
+}
+.member-homepage .lists .item {
+    margin: 1px 0 0 0;
+}
+.member-homepage .lists .item .presenter a {
+    font-family: "Geogrotesque-Medium", sans-serif;
+
+    color: #f15d22;
+}
+.member-homepage .lists .details h3 {
+    margin-bottom: 0;
+
+    font-size: 1.42em;
+}
+.member-homepage .lists .details h3 a {
+    display: block;
+
+    font-family: "Geogrotesque-Medium", sans-serif;
+    font-size: .845em;
+    line-height: 1.05;
+
+    color: #002749;
+}
+.member-homepage .lists .item:after {
+    display: block;
+    clear: both;
+
+    content: "";
+}
+
+.member-homepage .sidebar-heading {
+    display: inline-block;
+    margin: 0;
+
+    font-family: "Geogrotesque-SemiBold", sans-serif;
+    font-size: 1.6em;
+
+    text-transform: uppercase;
+
+    color: #002749;
+}
+.member-homepage .video-section .heading {
+    margin: 0 0 10px 0;
+
+    font-size: 27px;
+    font-size: 1.5em;
+
+    text-align: left;
+    text-transform: uppercase;
+}
+.member-homepage .video-section .heading span {
+    color: #00bcff;
+}
+.video-section {
+    padding-bottom: 3em;
+}
+.featured-posts {
+    padding-top: 2em;
+
+    background: #f9f8f8;
+}
+.member-homepage .blog {
+    margin-bottom: 2em;
+    overflow: hidden;
+
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background: #fff;
+    background: #fff;
+    -webkit-box-shadow: 0 1px 6px #e6e4e4;
+}
+.member-homepage .featured-posts .blog h3 {
+    margin: 0 0 5px 0;
+
+    font-family: "Geogrotesque-Regular", sans-serif;
+    font-size: 1.4em;
+    line-height: 1.2;
+}
+.member-homepage .blog h3 a {
+    color: #002749;
+}
+.member-homepage .blog .thumbnail {
+    width: 100%;
+    padding-top: 56.25%;
+}
+.member-homepage .blog .info {
+    min-height: 70px;
+    padding: 20px 15px;
+
+    font-family: "Geogrotesque-Medium",sans-serif;
+    font-size: 1em;
+
+    color: #f15d22;
+}
+
+.member-homepage .calendar {
+    padding: 10px 0;
+    margin-bottom: 10px;
+
+    text-align: center;
+}
+.member-homepage .calendar:after {
+    display: block;
+    clear: both;
+
+    content: "";
+}
+.member-homepage .calendar .year {
+    font-family: "Geogrotesque-SemiBold", sans-serif;
+}
+.member-homepage .calendar .date {
+    position: relative;
+
+    display: inline-block;
+    width: 50px;
+    margin: 5px 0;
+}
+.member-homepage .calendar .date:before {
+    position: absolute;
+    top: -3px;
+    left: 10px;
+    z-index: 2;
+
+    width: 4px;
+    height: 6px;
+
+    content: "";
+
+    background-color: #00bce4;
+}
+.member-homepage .calendar .date:after {
+    position: absolute;
+    top: -3px;
+    right: 10px;
+    z-index: 2;
+
+    width: 4px;
+    height: 6px;
+
+    content: "";
+
+    background-color: #00bce4;
+}
+.calendar .month.no-date {
+    background-color: #f15d22;
+}
+.calendar .month {
+    display: block;
+    padding: 5px 0 3px 0;
+
+    font-family: "Geogrotesque-Medium", sans-serif;
+    font-size: .7em;
+
+    text-transform: uppercase;
+
+    color: #fff;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: #002749;
+}
+.member-homepage .calendar .day {
+    display: block;
+    padding: .4em .3em;
+
+    font-family: "Geogrotesque-Medium", sans-serif;
+    font-size: .8em;
+
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: #f5f5f5;
+}
+.member-homepage .calendar .addeventatc {
+    display: block;
+    width: 167px;
+    margin: 0 auto;
+}
+.member-homepage .topic {
+    line-height: 1;
+
+    text-align: center;
+}
+.member-homepage .member-homepage .button {
+    display: block;
+    max-width: 160px;
+    margin: 0 auto;
+
+    background-color: #7ac943;
+}
+.member-homepage .heading {
+    margin: 0 0 20px 0;
+
+    font-family: "Geogrotesque-SemiBold", sans-serif;
+    font-size: 27px;
+    font-size: 1.5em;
+
+    text-align: center;
+    text-transform: uppercase;
+}
+.member-homepage .addeventatc {
+    display: block;
+    max-width: 175px;
+    margin: 0 auto;
+
+    color: #fff !important;
+    border: 0;
+    background: #79c142 !important;
+}
+.member-homepage .conference {
+    padding: 2em 0 0 0;
+}
+@media screen and ( max-width: 1070px ) {
+    .member-homepage .column-30,
+    .member-homepage .column-70 {
+        width: 100%;
+    }
+    .member-homepage .video {
+        margin-bottom: 30px;
+    }
+    .member-homepage .lists .details h3 a {
+        font-size: 1em;
+    }
+    .member-homepage .video-section {
+        padding-bottom: 1em;
+    }
+    .member-homepage .featured-posts .blog h3 {
+        min-height: 50px;
+
+        font-size: 1.5em;
+    }
+    .member-homepage .column-25 {
+        margin-bottom: 1.5em;
+    }
+}
+@media screen and ( max-width: 991px ) {
+    .member-homepage .heading {
+        margin-bottom: 1.2em;
+    }
+    .member-homepage .grid {
+        display: flex;
+
+        flex-wrap: wrap;
+    }
+    .member-homepage .column-25 {
+        width: 50%;
+
+        flex: auto;
+    }
+}
+@media screen and ( max-width: 767px ) {
+    .member-homepage .column-25,
+    .member-homepage .column-50 {
+        width: 100%;
+    }
+}
