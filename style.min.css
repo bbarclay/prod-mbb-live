@@ -413,6 +413,7 @@
 .webinars-section .tab-info h2 span{display:inline-block;padding:10px 15px;color:#fff;background:#002749}
 .webinars-section .tab-info.active{display:block}
 .webinars-section .type{display:inline-block;margin-right:5px;font-family:"Geogrotesque-Regular",sans-serif;color:#79c142}
+.button-custom{margin-bottom:20px}
 .reset-password-form{max-width:600px;padding:30px;margin:20px auto;border:1px solid #f1eeee}
 .reset-password-form label{display:block}
 .reset-password-form p{margin-bottom:5px}
