@@ -12,6 +12,8 @@ add_action( 'init', 'mbb_register_menu');
 add_action( 'wp_enqueue_scripts', 'mbb_dequeue_algolia_styles', 9999 );
 add_action( 'after_setup_theme', 'mbb_image_size' );
 
+add_filter( 'query_vars', 'mbb_query_vars_filter' );
+
 //add_action('wp_enqueue_scripts', 'mbb_check_shortcodes');
 
 /** =============================
@@ -126,4 +128,14 @@ function reset_flickr_scripts() {
 function reset_flickr_styles() {
     wp_deregister_style('justifiedGallery');
     wp_deregister_style('flickrJustifiedGalleryWPPlugin');
+}
+
+/**
+ * Register custom query var
+ * @param  id    $vars User's Ontraport Id
+ * @return array    
+ */
+function mbb_query_vars_filter($vars) {
+  $vars[] .= 'ontraport_id';
+  return $vars;
 }

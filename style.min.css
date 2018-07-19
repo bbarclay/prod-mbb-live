@@ -344,10 +344,12 @@
 .useful-contacts-secion .grid--boxes{margin-top:20px}
 .single-contact .inner-bottom span{display:block;min-width:70px;color:#a09e9e}
 .member-contact-listing{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin:0 -15px;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}
-.member-contact-listing .contact-item{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;width:25%;padding:10px;margin:0}
+.member-contact-listing .contact-item{width:25%;padding:10px;margin:0}
+.member-contact-listing .contact-item>a{display:block}
+.member-contact-listing .contact-item>a:hover{box-shadow:0 1px 6px #e8e3e3}
 .member-contact-listing .contact-item .inner{width:100%;border:1px solid #f3f2f2;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}
 .member-contact-listing .contact-item .inner:after{display:block;clear:both;content:""}
-.member-contact-listing .contact-item .image{width:100%;height:180px}
+.member-contact-listing .contact-item .image{width:100%;height:220px}
 .member-contact-listing .contact-item .detail{width:100%;min-height:100px;padding:10px 15px;text-align:center}
 .member-contact-listing .contact-item h4{margin-bottom:0;font-size:19px}
 .member-contact-listing .contact-item ul{padding:0;margin:0 0 5px 0;list-style:none}
