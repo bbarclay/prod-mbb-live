@@ -21,7 +21,14 @@ get_header()
 			// check if we're in reset form
 			if( isset( $_POST['action'] ) && 'reset' == $_POST['action'] && isset( $_POST['user_password'] ) )
 			{
-				$email = trim($_POST['user_login']);
+				$current_user = wp_get_current_user();
+
+				$email = $current_user->user_email;
+
+				if( ! isset( $_POST['pwd_reset_field'] ) || ! wp_verify_nonce( $_REQUEST['pwd_reset_field'], 'pwd_reset_action' ) ) {
+
+					$error = 'Unable to verify wp nonce';
+				}
 
 				if( empty( $email ) ) {
 					$error = 'Enter a username or e-mail address..';
@@ -29,6 +36,8 @@ get_header()
 					$error = 'Invalid username or e-mail address.';
 				} else if( ! email_exists( $email ) ) {
 					$error = 'There is no user registered with that email address.';
+
+
 				} else {
 
 					$password = $_POST['user_password'];
@@ -40,7 +49,7 @@ get_header()
 							'user_pass' => $password
 						)
 					 );
-
+					
 					unset($_POST);
 
 
@@ -51,25 +60,9 @@ get_header()
 						$subject = '[My Business Blueprint] Your new password';
 						$sender = get_option('name');
 
-						// function mbb_wp_email_content_type() {
-					 //        return 'text/html';
-					 //    }
-
-					 //    add_filter( 'wp_mail_content_type', 'mbb_wp_email_content_type' );
-
-
-						// ob_start();
-						// 	$GLOBALS["use_html_content_type"] = TRUE;
-						// 	include('/emails/reset-password.php');
-						// 	$message = ob_get_contents();
-	     //    			ob_end_clean();
-
-						// $mail = wp_mail( $to, $subject, $message );
-
-						//remove_filter( 'wp_mail_content_type', 'mbb_wp_email_content_type' );
-
 						
 						$success = 'Password has been successfully changed';
+
 						
 
 					} else {
@@ -106,7 +99,8 @@ get_header()
 							<?php $user_login = isset( $_POST['user_login'] ) ? $_POST['user_login'] : ''; ?>
 
 							<input type="hidden" name="randcheck"  value="<?php echo $rand; ?>" /> 
-							<input type="hidden" name="user_login" id="user_login" value="<?php echo $user->user_email ?>" /> 
+
+							<?php wp_nonce_field('pwd_reset_action', 'pwd_reset_field') ?>
 							<p><label for="user_login">Enter your new password</label><input type="password" name="user_password" id="user_password" required/></p>
 							<p><label for="user_login">Confirm new password</label><input type="password" name="retype_password" required/></p>
 							<span id="password-strength"></span>
