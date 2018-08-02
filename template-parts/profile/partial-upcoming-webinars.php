@@ -19,7 +19,7 @@
 						$current_date = strtotime("now");
 
 
-						if($current_date <= $webinar_date) :
+
 					?>	
 
 						<li>
@@ -72,7 +72,7 @@
 						</li>
 
 					<?php 
-						endif;
+	
 
 					endwhile; ?>	
 
