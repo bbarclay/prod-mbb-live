@@ -131,17 +131,13 @@
 .member-homepage .addeventatc{display:block;max-width:175px;margin:0 auto;color:#fff !important;border:0;background:#79c142 !important}
 .member-homepage .conference{padding:2em 0 0 0}
 .module .option-to-edit{margin-bottom:5px;text-align:right}
-.module .option-to-edit a{display:inline-block;padding:3px 7px;font-size:15px;color:#cac7c7;color:#fff;border-radius:3px;background:#79c142}
-.module .option-to-edit a.reset-link{margin-right:2px;color:#fff;background:#f15d22}
-.module .option-to-edit a.reset-link:hover{cursor:pointer;color:#fff;background:#002749}
-.module .option-to-edit a:hover{color:#fff;background:#002749}
 .module .option-to-edit:hover{cursor:pointer}
-.module__membership{position:relative;padding:10px 0;background:#fbfafa}
+.module__membership{position:relative;padding:10px 0}
 .module__membership .grid>.column:nth-child(1){width:calc(100% - 230px)}
 .module__membership .grid>.column:nth-child(2){width:230px}
 .module__membership .profile{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-self:center;-ms-flex-item-align:center;align-self:center;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}
 .module__membership .profile__thumbnail{width:170px;text-align:center}
-.module__membership .profile__thumbnail--image{width:100%;height:160px;background-repeat:no-repeat;background-size:cover}
+.module__membership .profile__thumbnail--image{width:100%;height:160px;border:1px solid #f7f4f4;background-repeat:no-repeat;background-size:cover}
 .module__membership .profile__info{width:calc(100% - 170px);padding-left:15px;word-break:break-word}
 .module__membership .profile__info>div>div:after{display:block;clear:both;content:""}
 .module__membership .profile__info>div>div>div:after{display:block;clear:both;content:""}
@@ -160,7 +156,7 @@
 .module__membership .useful-links ul li a{display:block;padding:7px 15px 7px 15px;font-family:"Geogrotesque-SemiBold",sans-serif;color:#0076c0;border-bottom:1px solid #f3f0f0}
 .module__membership .useful-links ul li a:hover{color:#002749}
 .module__membership .useful-links ul li:before{position:absolute;top:34%;left:0;width:12px;height:12px;border-radius:50%;background:url(assets/images/check.svg) 0 0/cover no-repeat}
-.module__membership .notes{position:relative;padding:2px 5px;margin:5px 0;font-size:13px;color:#fff;border-radius:2px;background:#f15d22}
+.module__membership .notes{position:relative;padding:2px 5px;margin:5px 0;font-size:13px;color:#353535;border-radius:2px;background:#f3ebe8}
 .module .grid{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin-right:-10px;margin-left:-10px;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}
 .module .grid .column{padding-right:5px;padding-left:5px;margin-bottom:10px}
 .module .bottom-info{padding-top:10px;margin-top:10px;border-top:1px solid #f1ecec}
@@ -447,6 +443,9 @@
 .table-default-brand{border-spacing:0}
 .table-default-brand thead>tr>th{padding:5px;border-spacing:0;border-bottom:1px solid #ddd;background:#f9f7f7}
 .table-default-brand tr>td,.table-default-brand tr>td{padding:5px}
+.button--small{height:32px;padding:5px 10px;margin-top:5px;font-size:16px}
+.button__danger{background:#f15d22}
+.button__success{background:#79c142}
 @media only screen and (min-width:600px){.header .button__membership span{margin-right:5px}
 .toggle-info{display:none}
 .cd-contact-person-section .upt-consultant .info .info-right{width:calc(100% - 235px)}

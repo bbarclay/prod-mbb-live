@@ -4,35 +4,6 @@
 
         text-align: right;
 
-        a {
-            display: inline-block;
-            padding: 3px 7px;
-
-            font-size: 15px;
-
-            color: #cac7c7;
-            color: #fff;
-            border-radius: 3px;
-            background: $success_color;
-
-            &.reset-link {
-                margin-right: 2px;
-
-                color: #fff;
-                background: #f15d22;
-
-                &:hover {
-                    cursor: pointer;
-
-                    color: #fff;
-                    background: $secondary_color;
-                }
-            }
-            &:hover {
-                color: #fff;
-                background: $secondary_color;
-            }
-        }
         &:hover {
             cursor: pointer;
         }
@@ -41,8 +12,6 @@
         position: relative;
 
         padding: 10px 0;
-
-        background: #fbfafa;
 
         .grid > .column {
             &:nth-child(1) {
@@ -81,6 +50,7 @@
                     width: 100%;
                     height: 160px;
 
+                    border: 1px solid #f7f4f4;
                     background-repeat: no-repeat;
                     background-size: cover;
 
@@ -268,9 +238,9 @@
 
             font-size: 13px;
 
-            color: #fff;
+            color: #353535;
             border-radius: 2px;
-            background: #f15d22;
+            background: #f3ebe8;
 
             @include breakpoint( 600 ) {
                 position: absolute;
