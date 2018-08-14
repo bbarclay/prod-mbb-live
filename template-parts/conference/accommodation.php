@@ -20,13 +20,13 @@
 	<div class="container">
 		<div class="row">
 
-		<?php if( have_rows('buttons') ) : 
-        	     while( have_rows('buttons')) : the_row();  ?>	
+		<?php if( have_rows('hotels') ) : 
+        	     while( have_rows('hotels')) : the_row();  ?>	
 
 		  			<div class="col-sm-6">
 						<div class="single-accommodation">
 							<div class="image">
-									<?php echo wp_get_attachment_image( get_sub_field('image') ) ?>
+								<?php echo wp_get_attachment_image( get_sub_field('image') ) ?>
 							</div>
 							<div class="info">
 								<?php echo get_sub_field('info') ?>
