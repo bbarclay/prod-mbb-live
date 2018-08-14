@@ -16,7 +16,7 @@
 		</div>
 	</div>
 </div>
-<div class="cd-section cd-accommodation-section">
+<div class="cd-section cd-accommodation-section cd-hotel-section">
 	<div class="container">
 		<div class="row">
 
