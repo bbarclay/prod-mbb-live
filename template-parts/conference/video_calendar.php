@@ -43,9 +43,9 @@
                             ?>
 							<div class="schedule">
 							  <div><strong>Day 1</strong> - 9:00am to 5:30pm </div>
-							  <div><strong>Day 2</strong> -  9:00am to 5:30pm )</div>
-							  <div><strong>Day 3</strong> - 9:00am to 5:45pm )</div>
-							  <div><strong>Day 4</strong> -  9:30am to 4:00pm )</div>
+							  <div><strong>Day 2</strong> -  9:00am to 5:30pm </div>
+							  <div><strong>Day 3</strong> - 9:00am to 5:45pm </div>
+							  <div><strong>Day 4</strong> -  9:30am to 4:00pm </div>
 							</div>	
 						</div>
 						<div class="cd-button">
