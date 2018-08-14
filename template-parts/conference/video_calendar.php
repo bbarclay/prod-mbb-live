@@ -2,7 +2,7 @@
 	<div class="container">
 	    <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
 		<div class="row">
-			<div class="col-sm-5 text-center">
+			<div class="col-sm-4 text-center">
 
 				<?php if( get_sub_field('heading') ) : ?>
 					<h2 class="heading"><?php echo get_sub_field('heading') ?></h2>
@@ -59,7 +59,7 @@
 				</div>
 
 			</div>	
-			<div class="col-sm-7">
+			<div class="col-sm-8">
 			    <!-- Video -->
 				<div class="video">
                     <?php echo get_sub_field('video')  ?>

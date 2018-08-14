@@ -26,7 +26,7 @@
 		  			<div class="col-sm-6">
 						<div class="single-accommodation">
 							<div class="image">
-								<?php echo wp_get_attachment_image( get_sub_field('image') ) ?>
+								<?php echo wp_get_attachment_image( get_sub_field('image'), 'full' ) ?>
 							</div>
 							<div class="info">
 								<?php echo get_sub_field('info') ?>
