@@ -285,7 +285,7 @@
 .cd-contact-person-section .upt-consultant ul li:nth-child(4) .btn{background:#002749}
 .cd-contact-person-section .upt-consultant ul li .btn{display:block;padding:5px 15px;font-family:"Geogrotesque-SemiBold",sans-serif;color:#fff;border-radius:4px}
 .cd-contact-person-section .upt-consultant ul li .btn:hover{background-color:#002749}
-.cd-calendar{max-width:450px;padding:10px 0;margin:0 auto;text-align:center}
+.cd-calendar{max-width:550px;padding:10px 0;margin:0 auto;text-align:center}
 .cd-calendar .year{font-family:"Geogrotesque-SemiBold",sans-serif}
 .cd-calendar .date{position:relative;display:inline-block;min-width:calc(25% - 5px);padding:10px 5px;margin:5px 0 10px 0;background:#fff;box-shadow:0 2px 20px 0 #ddd}
 .cd-calendar .date:nth-child(4n+1) .day-numeric{color:#002749}
