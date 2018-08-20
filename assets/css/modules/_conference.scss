@@ -409,16 +409,11 @@
     }
 }
 .cd-calendar {
+    max-width: 450px;
     padding: 10px 0;
+    margin: 0 auto;
 
     text-align: center;
-
-    &:after {
-        display: block;
-        clear: both;
-
-        content: "";
-    }
 
     .year {
         font-family: $font_bold;
@@ -428,50 +423,48 @@
         position: relative;
 
         display: inline-block;
-        width: 50px;
-        margin: 5px 0;
+        min-width: calc(25% - 5px);
+        padding: 10px 5px;
+        margin: 5px 0 10px 0;
 
-        &:before {
-            position: absolute;
-            top: -3px;
-            left: 10px;
-            z-index: 2;
+        background: #fff;
+        box-shadow: 0 2px 20px 0 #ddd;
 
-            width: 4px;
-            height: 6px;
-
-            content: "";
-
-            background-color: #00bce4;
+        @include breakpoint( 767) {
+            min-width: calc(50% - 5px);
+            margin-bottom: 5px;
         }
-        &:after {
-            position: absolute;
-            top: -3px;
-            right: 10px;
-            z-index: 2;
 
-            width: 4px;
-            height: 6px;
-
-            content: "";
-
-            background-color: #00bce4;
+        &:nth-child(4n+1) {
+            .day-numeric {
+                color: #002749;
+            }
+        }
+        &:nth-child(4n+2) {
+            .day-numeric {
+                color: #f15d22;
+            }
+        }
+        &:nth-child(4n+3) {
+            .day-numeric {
+                color: #0076c0;
+            }
+        }
+        &:nth-child(4n+4) {
+            .day-numeric {
+                color: #7ac143;
+            }
         }
     }
 
     .month {
         display: block;
-        padding: 5px 0 3px 0;
 
-        font-family: $font_medium;
-        font-size: .7em;
+        font-family: $font_light;
+        font-size: 15px;
+        line-height: 1;
 
         text-transform: uppercase;
-
-        color: #fff;
-        border-top-left-radius: 3px;
-        border-top-right-radius: 3px;
-        background-color: #002749;
 
         &.no-date {
             background: $danger_color;
@@ -479,14 +472,19 @@
     }
     .day {
         display: block;
-        padding: .4em .3em;
 
         font-family: $font_medium;
-        font-size: .8em;
+        font-size: 20px;
 
-        border-bottom-right-radius: 5px;
-        border-bottom-left-radius: 5px;
-        background: #f5f5f5;
+        text-transform: uppercase;
+    }
+    .day-numeric {
+        display: block;
+        padding: 5px 2px;
+
+        font-family: $font_bold;
+        font-size: 35px;
+        line-height: 1;
     }
 }
 

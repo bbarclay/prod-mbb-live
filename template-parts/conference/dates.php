@@ -25,18 +25,25 @@
 
                             				if($count ==  $no_of_dates ) {
                             					$last_day = get_sub_field('item');
-                            				}
-                            				
-                            ?>	
+                            				} ?>	
+
 										<div class="date">
-											<span class="month"><?php echo date( 'M', strtotime( get_sub_field('item') ) ); ?></span>
-											<span class="day"><?php echo date( 'jS', strtotime(  get_sub_field('item') ) ); ?></span>
+											<span class="month"><?php echo date( 'F', strtotime( get_sub_field('item') ) ); ?><br></span><span class="day"><?php echo date( 'l', strtotime(  get_sub_field('item') ) ); ?></span>
+											<span class="day-numeric"><?php echo date( 'j', strtotime(  get_sub_field('item') ) ); ?></span>
+											
 										</div>
+
 
                             <?php	
                             		endwhile;
                             	endif;	
                             ?>
+                            <div class="schedule">
+							  <div><strong>Day 1</strong> - 9:00am to 6:00pm </div>
+							  <div><strong>Day 2</strong> -  9:00am to 6:00pm </div>
+							  <div><strong>Day 3</strong> - 9:00am to 6:00pm </div>
+							  <div><strong>Day 4</strong> -  9:30am to 4:00pm </div>
+							</div>	
 
 							</div>
 							<div class="cd-button">

@@ -241,7 +241,7 @@
 .cd-banner{margin-bottom:0}
 .cd-section{padding:2em 0}
 .cd-section:active{outline:0}
-.cd-section:nth-child(odd){background:#f9f7f7}
+.cd-section:nth-child(even){background:#f9f7f7}
 .cd-section .cd-title{font-family:"Geogrotesque-SemiBold",sans-serif;text-transform:uppercase}
 .cd-section .cd-description,.cd-section .cd-title{text-align:center}
 .cd-section .heading{margin-bottom:0}
@@ -285,15 +285,17 @@
 .cd-contact-person-section .upt-consultant ul li:nth-child(4) .btn{background:#002749}
 .cd-contact-person-section .upt-consultant ul li .btn{display:block;padding:5px 15px;font-family:"Geogrotesque-SemiBold",sans-serif;color:#fff;border-radius:4px}
 .cd-contact-person-section .upt-consultant ul li .btn:hover{background-color:#002749}
-.cd-calendar{padding:10px 0;text-align:center}
-.cd-calendar:after{display:block;clear:both;content:""}
+.cd-calendar{max-width:450px;padding:10px 0;margin:0 auto;text-align:center}
 .cd-calendar .year{font-family:"Geogrotesque-SemiBold",sans-serif}
-.cd-calendar .date{position:relative;display:inline-block;width:50px;margin:5px 0}
-.cd-calendar .date:before{position:absolute;top:-3px;left:10px;z-index:2;width:4px;height:6px;content:"";background-color:#00bce4}
-.cd-calendar .date:after{position:absolute;top:-3px;right:10px;z-index:2;width:4px;height:6px;content:"";background-color:#00bce4}
-.cd-calendar .month{display:block;padding:5px 0 3px 0;font-family:"Geogrotesque-Medium",sans-serif;font-size:.7em;text-transform:uppercase;color:#fff;border-top-left-radius:3px;border-top-right-radius:3px;background-color:#002749}
+.cd-calendar .date{position:relative;display:inline-block;min-width:calc(25% - 5px);padding:10px 5px;margin:5px 0 10px 0;background:#fff;box-shadow:0 2px 20px 0 #ddd}
+.cd-calendar .date:nth-child(4n+1) .day-numeric{color:#002749}
+.cd-calendar .date:nth-child(4n+2) .day-numeric{color:#f15d22}
+.cd-calendar .date:nth-child(4n+3) .day-numeric{color:#0076c0}
+.cd-calendar .date:nth-child(4n+4) .day-numeric{color:#7ac143}
+.cd-calendar .month{display:block;font-family:"Geogrotesque-Light",sans-serif;font-size:15px;line-height:1;text-transform:uppercase}
 .cd-calendar .month.no-date{background:#f15d22}
-.cd-calendar .day{display:block;padding:.4em .3em;font-family:"Geogrotesque-Medium",sans-serif;font-size:.8em;border-bottom-right-radius:5px;border-bottom-left-radius:5px;background:#f5f5f5}
+.cd-calendar .day{display:block;font-family:"Geogrotesque-Medium",sans-serif;font-size:20px;text-transform:uppercase}
+.cd-calendar .day-numeric{display:block;padding:5px 2px;font-family:"Geogrotesque-SemiBold",sans-serif;font-size:35px;line-height:1}
 .cd-accommodation-section .embed-content{margin-bottom:20px;box-shadow:0 5px 10px 0 #e0dada}
 .cd-accommodation-section .single-accommodation{margin:20px 0;border-bottom-right-radius:5px;border-bottom-left-radius:5px;background:#fff;box-shadow:0 2px 10px #efebeb}
 .cd-accommodation-section .single-accommodation .info{padding:20px}
@@ -654,6 +656,7 @@ th.visible-lg,td.visible-lg{display:table-cell !important}
 .upt-conference .grid__column{width:100%}
 .cd-nav-section .column{width:50%}
 .cd-contact-person-section .upt-consultant ul li{width:50%}
+.cd-calendar .date{min-width:calc(50% - 5px);margin-bottom:5px}
 .upt-consultant .info .info-left{margin-right:20px;margin-bottom:20px}
 .upt-consultant .info .info-right{float:none;width:100%;padding:0}
 .member-contact-listing .contact-item{width:33.3333%}
