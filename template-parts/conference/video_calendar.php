@@ -20,21 +20,20 @@
                             	if( have_rows('dates') ) :
                             		$count 		 = 0;
                             	    
-
                             		while( have_rows('dates')) : the_row(); 
                             			$count++;
                             				if($count == 1) {
                             					$first_day = get_sub_field('item');
                             				}
-
                             				if($count ==  $no_of_dates ) {
                             					$last_day = get_sub_field('item');
-                            				}
-                            				
-                            ?>	
-										<div class="date">
-											<span class="month"><?php echo date( 'M', strtotime( get_sub_field('item') ) ); ?></span>
-											<span class="day"><?php echo date( 'jS', strtotime(  get_sub_field('item') ) ); ?></span>
+                            				} ?>	
+										<div class="item">
+											<div class="date">
+												<span class="month"><?php echo date( 'M', strtotime( get_sub_field('item') ) ); ?></span>
+												<span class="day"><?php echo date( 'jS', strtotime(  get_sub_field('item') ) ); ?></span>
+											</div>
+											<span><?php echo date( 'D', strtotime(  get_sub_field('item') ) ); ?></span>
 										</div>
 
                             <?php	
@@ -42,9 +41,9 @@
                             	endif;	
                             ?>
 							<div class="schedule">
-							  <div><strong>Day 1</strong> - 9:00am to 5:30pm </div>
-							  <div><strong>Day 2</strong> -  9:00am to 5:30pm </div>
-							  <div><strong>Day 3</strong> - 9:00am to 5:45pm </div>
+							  <div><strong>Day 1</strong> - 9:00am to 6:00pm </div>
+							  <div><strong>Day 2</strong> -  9:00am to 6:00pm </div>
+							  <div><strong>Day 3</strong> - 9:00am to 6:00pm </div>
 							  <div><strong>Day 4</strong> -  9:30am to 4:00pm </div>
 							</div>	
 						</div>
