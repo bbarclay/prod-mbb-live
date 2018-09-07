@@ -72,12 +72,17 @@ get_header(); ?>
 														<div class="box">
 															<a href="<?php the_permalink(); ?>" class="box__link">
 																<div class="box__label">
-																	<?php 
-																			the_title(); 
-
-
-																			wp_reset_postdata();		
-																	?>
+																	<div class="inner">
+																    	<div>
+																			<?php 
+																				echo '<span>' . get_the_title()  . '</span>'; 
+																				wp_reset_postdata();			
+																			?>
+																			<div class="box__icon">
+																				<?php echo get_sub_field('icon'); ?>
+																			</div>
+																		</div>
+																	</div>
 																</div>
 															</a>
 														</div>
