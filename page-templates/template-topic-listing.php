@@ -4,7 +4,6 @@
  */
 
 get_header(); ?>
-
 <main id="content" class="content" itemscope itemtype="WebPageElement" itemprop="mainContentOfPage" tabindex="-1">
 	<article <?php post_class( 'entry--full' ); ?> itemscope itemtype="http://schema.org/CreativeWork">
 		<?php while ( have_posts() ) : the_post(); ?>
@@ -24,9 +23,9 @@ get_header(); ?>
 			
 				<?php if( have_rows('category') ):  ?>
 
-
+				
 					<?php while( have_rows('category') ) : the_row();   ?>
-
+						
 						<?php if( get_sub_field('heading') ) : ?>
 							<header class="content__header">
 								<h2 class="content__title"><?php echo get_sub_field('heading') ?></h2>
@@ -34,7 +33,7 @@ get_header(); ?>
 						<?php endif; ?>
 
 						<?php if( have_rows('list') ):  ?>
-
+						 
 							<div class="grid  grid--boxes">
 
 								<?php while( have_rows('list') ) : the_row();  ?>	
@@ -45,9 +44,16 @@ get_header(); ?>
 												<div class="box">
 													<a href="<?php echo get_sub_field('link'); ?>" class="box__link">
 														<div class="box__label">
-															<?php 
-																echo get_sub_field('title'); 	
-															?>
+														    <div class="inner">
+														    	<div>
+																	<?php 
+																		echo '<span>' . get_sub_field('title') . '</span>'; 	
+																	?>
+																	<div class="box__icon">
+																		<?php echo get_sub_field('icon'); ?>
+																	</div>
+																</div>
+															</div>
 														</div>
 													</a>
 												</div>
@@ -68,6 +74,8 @@ get_header(); ?>
 																<div class="box__label">
 																	<?php 
 																			the_title(); 
+
+
 																			wp_reset_postdata();		
 																	?>
 																</div>

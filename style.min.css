@@ -448,6 +448,8 @@
 .button--small{height:32px;padding:5px 10px;margin-top:5px;font-size:16px}
 .button__danger{background:#f15d22}
 .button__success{background:#79c142}
+.box__icon{max-width:60px;margin:0 auto}
+.box__icon p{margin:0}
 @media only screen and (min-width:600px){.header .button__membership span{margin-right:5px}
 .toggle-info{display:none}
 .cd-contact-person-section .upt-consultant .info .info-right{width:calc(100% - 235px)}
