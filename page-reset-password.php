@@ -115,7 +115,12 @@ get_header()
 				<p>Please login to view this page.</p>
 			<?php endif; ?>	
 </div>		
-
+<style>
+	.reset-password-form .button-error {
+	    background: #2b2a2a !important;
+	    cursor: no-drop;
+	}
+</style>
 <script>
 	(function(){
 		function checkPasswordStrength( $pass1,
@@ -128,6 +133,9 @@ get_header()
 		 
 		    // Reset the form & meter
 		    $submitButton.attr( 'disabled', 'disabled' );
+		    $submitButton.addClass('button-error');
+	
+
 		    $strengthResult.removeClass( 'short bad good strong label label-danger label-success' );
 		 
 		    // Extend our blacklist array with those from the inputs & site data
@@ -137,6 +145,7 @@ get_header()
 		    var strength = wp.passwordStrength.meter( pass1, blacklistArray, pass2 );
 		 
 		    // Add the strength meter results
+		    console.log(strength);
 		    switch ( strength ) {
 		 
 		        case 2:
@@ -165,6 +174,7 @@ get_header()
 		    // both passwords are filled up
 		    if ( 3 === strength && '' !== pass2.trim() ) {
 		        $submitButton.removeAttr( 'disabled' );
+		        $submitButton.removeClass('button-error');
 		    }
 		 
 		    return strength;
