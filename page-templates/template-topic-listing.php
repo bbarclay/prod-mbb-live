@@ -21,12 +21,19 @@ get_header(); ?>
 		<div class="container">
 			<div class="entry__content  clearfix" itemprop="text">
 			
-				<?php if( have_rows('category') ):  ?>
+				<?php 
 
-				
+					$is_silver =  do_shortcode('[mbb_silver_membership]');
+
+					if( have_rows('category') ):  ?>
+
 					<?php while( have_rows('category') ) : the_row();   ?>
 						
-						<?php if( get_sub_field('heading') ) : ?>
+						<?php if( get_sub_field('heading_for_silver_membership') && $is_silver ) : ?>
+							<header class="content__header">
+								<h2 class="content__title"><?php echo get_sub_field('heading_for_silver_membership') ?></h2>
+							</header>
+						<?php elseif( get_sub_field('heading') && !$is_silver  ) : ?>
 							<header class="content__header">
 								<h2 class="content__title"><?php echo get_sub_field('heading') ?></h2>
 							</header>
@@ -38,27 +45,49 @@ get_header(); ?>
 
 								<?php while( have_rows('list') ) : the_row();  ?>	
 
-									<?php if( get_sub_field('external_link') ) : ?>
+										<?php if( get_sub_field('external_link') ) : ?>
 
-											<div class="grid__column">
-												<div class="box">
-													<a href="<?php echo get_sub_field('link'); ?>" class="box__link">
-														<div class="box__label">
-														    <div class="inner">
-														    	<div>
-																	<?php 
-																		echo '<span>' . get_sub_field('title') . '</span>'; 	
-																	?>
-																	<div class="box__icon">
-																		<?php echo get_sub_field('icon'); ?>
+											<?php if( ( get_sub_field('silver_only') || !get_sub_field('exclude_for_silver')   ) && $is_silver  ) {  ?>
+												
+												<div class="grid__column">
+													<div class="box">
+														<a href="<?php echo get_sub_field('link'); ?>" class="box__link">
+															<div class="box__label">
+															    <div class="inner">
+															    	<div>
+																		<?php 
+																			echo '<span>' . get_sub_field('title') . '</span>'; 	
+																		?>
+																		<div class="box__icon">
+																			<?php echo get_sub_field('icon'); ?>
+																		</div>
 																	</div>
 																</div>
 															</div>
-														</div>
-													</a>
+														</a>
+													</div>
 												</div>
-											</div>
-											
+											<?php } else if ( ( !get_sub_field('silver_only') || get_sub_field('exclude_for_silver')  ) && !$is_silver  ) { ?>	
+				                                <div class="grid__column">
+													<div class="box">
+														<a href="<?php echo get_sub_field('link'); ?>" class="box__link">
+															<div class="box__label">
+															    <div class="inner">
+															    	<div>
+																		<?php 
+																			echo '<span>' . get_sub_field('title') . '</span>'; 	
+																		?>
+																		<div class="box__icon">
+																			<?php echo get_sub_field('icon'); ?>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</a>
+													</div>
+												</div>
+											<?php } ?>
+
 										<?php else: ?>	
 									
 											<?php $post_object = get_sub_field('item');
@@ -89,7 +118,6 @@ get_header(); ?>
 													</div>
 						
 											<?php endif; ?>
-
 										<?php endif; ?>
 
 									<?php endwhile; ?>	
