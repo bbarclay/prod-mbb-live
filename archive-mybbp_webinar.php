@@ -8,8 +8,8 @@
 
             $is_silver =  do_shortcode('[mbb_silver_membership]');
 
-            if(!$is_silver) :  ?>      
-                <a href="http://my.businessblueprint.com/upcoming-webinars/" class="button button-custom">Upcoming Support Webinars</a>
+            if($is_silver) :  ?>      
+                <a href="http://my.businessblueprint.com/upcoming-silver-webinar/" class="button button-custom">Upcoming Support Webinars</a>
             <?php else: ?>
                 <a href="http://my.businessblueprint.com/upcoming-webinars/" class="button button-custom">Upcoming Webinars</a>
             <?php endif; ?>
