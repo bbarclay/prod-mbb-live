@@ -50,7 +50,7 @@ get_header(); ?>
 											<?php if( ( get_sub_field('silver_only') || !get_sub_field('exclude_for_silver')   ) && $is_silver  ) {  ?>
 												
 												<div class="grid__column">
-													<div class="box">
+													<div class="box" id="<?php echo get_sub_field('id') ?>">
 														<a href="<?php echo get_sub_field('link'); ?>" class="box__link">
 															<div class="box__label">
 															    <div class="inner">
@@ -69,7 +69,7 @@ get_header(); ?>
 												</div>
 											<?php } else if ( ( !get_sub_field('silver_only') || get_sub_field('exclude_for_silver')  ) && !$is_silver  ) { ?>	
 				                                <div class="grid__column">
-													<div class="box">
+													<div class="box" id="<?php echo get_sub_field('id') ?>">
 														<a href="<?php echo get_sub_field('link'); ?>" class="box__link">
 															<div class="box__label">
 															    <div class="inner">
@@ -98,7 +98,7 @@ get_header(); ?>
 													setup_postdata( $post );  ?>
 
 													<div class="grid__column">
-														<div class="box">
+														<div class="box"  id="<?php echo get_sub_field('id') ?>">
 															<a href="<?php the_permalink(); ?>" class="box__link">
 																<div class="box__label">
 																	<div class="inner">
@@ -135,7 +135,6 @@ get_header(); ?>
 			</div>
 		</div>
 	</article>
-	
 </main>
 
 <?php get_footer(); ?>

@@ -31,6 +31,7 @@ function mbb_enqueue_styles() {
     $parent_style = 'parent-style'; 
     wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
     wp_enqueue_script( 'mbb-child', get_stylesheet_directory_uri() . '/js/app.js', array(), false, true );
+    wp_enqueue_script( 'bodymovin', 'https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.13.0/bodymovin.min.js', array(), false, false );
 
     if( is_page('reset-password') ) {
 
