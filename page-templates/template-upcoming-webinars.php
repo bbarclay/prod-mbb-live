@@ -46,10 +46,8 @@ get_header();
 									<li>
 										<div class="webinar__item">
 											<div class="col-left">
-												<h3><?php  echo get_sub_field('title') ?></h3>
-												<span class="type">
 												<?php if( get_sub_field('webinar_type') ) : ?>
-													<span class="fa fa-tv"></span> <?php echo get_sub_field('webinar_type') ?></span>
+													<h3><?php  echo get_sub_field('title') ?></h3>
 												<?php endif; ?>
 												<span class="name"><span class="fa fa-user"></span> <?php echo get_sub_field('name') ?></span>
 												<div class="description"><?php  echo get_sub_field('description') ?></div>
