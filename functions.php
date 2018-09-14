@@ -131,6 +131,19 @@ function reset_flickr_styles() {
     wp_deregister_style('flickrJustifiedGalleryWPPlugin');
 }
 
+function filter_search_post( $should_index, WP_Post $post )
+{
+    if ( 63050 === $post->ID && 63048 === $post->ID && 63041 === $post->ID  ) {
+        return false;
+    }
+
+    return $should_index;
+}
+
+// Hook into Algolia to manipulate the post that should be indexed.
+add_filter( 'algolia_should_index_searchable_post', 'filter_search_post', 10, 2 );
+add_filter( 'algolia_should_index_post', 'filter_search_post', 10, 2 );
+
 /**
  * Register custom query var
  * @param  id    $vars User's Ontraport Id
