@@ -133,7 +133,6 @@ function reset_flickr_styles() {
 
 function filter_search_post( $should_index, WP_Post $post )
 {
-    //if ( 63050 === $post->ID && 63048 === $post->ID && 63041 === $post->ID  ) {
     if( 19397 === $post->ID  ) {
         return false;
     }
