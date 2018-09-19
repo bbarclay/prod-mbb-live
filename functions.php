@@ -30,8 +30,10 @@ function mbb_enqueue_styles() {
 
     $parent_style = 'parent-style'; 
     wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
-    wp_enqueue_script( 'mbb-child', get_stylesheet_directory_uri() . '/js/app.js', array(), false, true );
     wp_enqueue_script( 'bodymovin', 'https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.13.0/bodymovin.min.js', array(), false, false );
+    wp_enqueue_script( 'eventcalendar', 'https://addevent.com/libs/atc/1.6.1/atc.min.js', array(), false, false );
+    wp_enqueue_script( 'mbb-child', get_stylesheet_directory_uri() . '/js/app.js', array(), false, true );
+    
 
     if( is_page('reset-password') ) {
 
@@ -142,6 +144,18 @@ function filter_search_post( $should_index, WP_Post $post )
     if( 63041 === $post->ID  ) {
         return false;
     }
+    if( 63094 === $post->ID  ) {
+        return false;
+    }
+    if( 63096 === $post->ID  ) {
+        return false;
+    }
+    if( 63098 === $post->ID  ) {
+        return false;
+    }
+    if( 63100 === $post->ID  ) {
+        return false;
+    }
 
     return $should_index;
 }
@@ -159,3 +173,72 @@ function mbb_query_vars_filter($vars) {
   $vars[] .= 'ontraport_id';
   return $vars;
 }
+
+
+function mbb_is_silver() {
+    $is_silver =  do_shortcode('[mbb_silver_membership]');
+}
+
+function mbb_customer_type() {
+
+    return $customer_type =  do_shortcode('[mbb_get_customer_type]'); 
+
+  
+}
+
+/**
+ * Check the customer type and 
+ * then show conference date
+ * @return [type] [description]
+ */
+function mbb_conference_dates() {
+
+     $customer_type =  do_shortcode('[mbb_get_customer_type]'); 
+
+      if( $customer_type == 'Fasttrack Gold') {
+        $show_dates = 'conference_dates';
+      }
+      else if ( $customer_type == 'Fasttrack Platinum') {
+        $show_dates = 'conference_dates';
+      }
+      else if ( $customer_type == 'Elite Gold' ) {
+        $show_dates = 'elite_conference_dates';
+      }
+      else if ( $customer_type == 'Elite Platinum'  ) {
+        $show_dates = 'elite_conference_dates';
+      }
+      else {
+        $show_dates = 'conference_dates';
+      }
+
+      return $show_dates;  
+}
+
+/**
+ * Check the customer type and 
+ * then show total numbers of days
+ * @return [type] [description]
+ */
+function mbb_allowed_dates() {
+
+     $customer_type =  do_shortcode('[mbb_get_customer_type]'); 
+
+      if( $customer_type == 'Fasttrack Gold') {
+            $days = 2;
+      }
+      else if ( $customer_type == 'Fasttrack Platinum') {
+            $days = 4;
+      }
+      else if ( $customer_type == 'Elite Gold' ) {
+            $days = 2;
+      }
+      else if ( $customer_type == 'Elite Platinum'  ) {
+            $days = 4;
+      }
+      else {
+            $days = 4;
+      }
+
+      return $days;  
+}
+

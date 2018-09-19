@@ -1,310 +1,293 @@
-    .member-homepage {
-    margin-top: 0;
-}
-.member-homepage .column-70 {
-    width: 70%;
-}
-.member-homepage .column-60 {
-    width: 60%;
-}
-.member-homepage .column-25 {
-    width: 25%;
-}
-.member-homepage .column-50 {
-    width: 50%;
-}
-.member-homepage .column-40 {
-    width: 40%;
-}
-.member-homepage .column-30 {
-    width: 30%;
-}
-.member-homepage .column-33 {
-    width: 33.3333%;
-}
-.member-homepage .column-25 {
-    width: 25%;
-}
-.member-homepage .video {
-    position: relative;
-
-    width: 100%;
-    margin-top: 21px;
-
-    border: 1px solid #f5f3f3;
-    border-radius: 3px;
-}
-.member-homepage .lists {
-    padding: 0;
-
-    list-style: none;
-}
-.member-homepage .lists .item .video {
-    float: left;
-    width: 50%;
-    padding-top: 0;
-    overflow: hidden;
-
-    border: 1px solid #f3f3f3;
-}
-.member-homepage .list .presenter {
-    margin-top: 0;
-}
-.member-homepage .lists .item .details {
-    padding: .32em 0;
-
-    border-bottom: 1px solid #f6f7f9;
-}
-.member-homepage .lists .item {
-    margin: 1px 0 0 0;
-}
-.member-homepage .lists .item .presenter a {
-    font-family: "Geogrotesque-Medium", sans-serif;
-
-    color: #f15d22;
-}
-.member-homepage .lists .details h3 {
+.home .content,
+.home .banner {
     margin-bottom: 0;
-
-    font-size: 1.42em;
 }
-.member-homepage .lists .details h3 a {
-    display: block;
+.homepage {
+    padding: 3rem 0;
 
-    font-family: "Geogrotesque-Medium", sans-serif;
-    font-size: .845em;
-    line-height: 1.05;
-
-    color: #002749;
-}
-.member-homepage .lists .item:after {
-    display: block;
-    clear: both;
-
-    content: "";
-}
-
-.member-homepage .sidebar-heading {
-    display: inline-block;
-    margin: 0;
-
-    font-family: "Geogrotesque-SemiBold", sans-serif;
-    font-size: 1.6em;
-
-    text-transform: uppercase;
-
-    color: #002749;
-}
-.member-homepage .video-section .heading {
-    margin: 0 0 10px 0;
-
-    font-size: 27px;
-    font-size: 1.5em;
-
-    text-align: left;
-    text-transform: uppercase;
-}
-.member-homepage .video-section .heading span {
-    color: #00bcff;
-}
-.video-section {
-    padding-bottom: 3em;
-}
-.featured-posts {
-    padding-top: 2em;
-
-    background: #f9f8f8;
-}
-.member-homepage .blog {
-    margin-bottom: 2em;
-    overflow: hidden;
-
-    border-bottom-right-radius: 3px;
-    border-bottom-left-radius: 3px;
-    background: #fff;
-    background: #fff;
-    -webkit-box-shadow: 0 1px 6px #e6e4e4;
-}
-.member-homepage .featured-posts .blog h3 {
-    margin: 0 0 5px 0;
-
-    font-family: "Geogrotesque-Regular", sans-serif;
-    font-size: 1.4em;
-    line-height: 1.2;
-}
-.member-homepage .blog h3 a {
-    color: #002749;
-}
-.member-homepage .blog .thumbnail {
-    width: 100%;
-    padding-top: 56.25%;
-}
-.member-homepage .blog .info {
-    min-height: 70px;
-    padding: 20px 15px;
-
-    font-family: "Geogrotesque-Medium",sans-serif;
-    font-size: 1em;
-
-    color: #f15d22;
-}
-
-.member-homepage .calendar {
-    padding: 10px 0;
-    margin-bottom: 10px;
-
-    text-align: center;
-}
-.member-homepage .calendar:after {
-    display: block;
-    clear: both;
-
-    content: "";
-}
-.member-homepage .calendar .year {
-    font-family: "Geogrotesque-SemiBold", sans-serif;
-}
-.member-homepage .calendar .date {
-    position: relative;
-
-    display: inline-block;
-    width: 50px;
-    margin: 5px 0;
-}
-.member-homepage .calendar .date:before {
-    position: absolute;
-    top: -3px;
-    left: 10px;
-    z-index: 2;
-
-    width: 4px;
-    height: 6px;
-
-    content: "";
-
-    background-color: #00bce4;
-}
-.member-homepage .calendar .date:after {
-    position: absolute;
-    top: -3px;
-    right: 10px;
-    z-index: 2;
-
-    width: 4px;
-    height: 6px;
-
-    content: "";
-
-    background-color: #00bce4;
-}
-.calendar .month.no-date {
-    background-color: #f15d22;
-}
-.calendar .month {
-    display: block;
-    padding: 5px 0 3px 0;
-
-    font-family: "Geogrotesque-Medium", sans-serif;
-    font-size: .7em;
-
-    text-transform: uppercase;
-
-    color: #fff;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    background-color: #002749;
-}
-.member-homepage .calendar .day {
-    display: block;
-    padding: .4em .3em;
-
-    font-family: "Geogrotesque-Medium", sans-serif;
-    font-size: .8em;
-
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    background: #f5f5f5;
-}
-.member-homepage .calendar .addeventatc {
-    display: block;
-    width: 167px;
-    margin: 0 auto;
-}
-.member-homepage .topic {
-    line-height: 1;
-
-    text-align: center;
-}
-.member-homepage .member-homepage .button {
-    display: block;
-    max-width: 160px;
-    margin: 0 auto;
-
-    background-color: #7ac943;
-}
-.member-homepage .heading {
-    margin: 0 0 20px 0;
-
-    font-family: "Geogrotesque-SemiBold", sans-serif;
-    font-size: 27px;
-    font-size: 1.5em;
-
-    text-align: center;
-    text-transform: uppercase;
-}
-.member-homepage .addeventatc {
-    display: block;
-    max-width: 175px;
-    margin: 0 auto;
-
-    color: #fff !important;
-    border: 0;
-    background: #79c142 !important;
-}
-.member-homepage .conference {
-    padding: 2em 0 0 0;
-}
-@media screen and ( max-width: 1070px ) {
-    .member-homepage .column-30,
-    .member-homepage .column-70 {
-        width: 100%;
+    @media ( max-width: 767px) {
+        padding: 2rem 0;
     }
-    .member-homepage .video {
-        margin-bottom: 30px;
-    }
-    .member-homepage .lists .details h3 a {
-        font-size: 1em;
-    }
-    .member-homepage .video-section {
-        padding-bottom: 1em;
-    }
-    .member-homepage .featured-posts .blog h3 {
-        min-height: 50px;
 
-        font-size: 1.5em;
+    .heading {
+        position: relative;
+
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+
+        font-family: "Geogrotesque-Medium", sans-serif;
+        font-size: 25px;
+
+        text-transform: uppercase;
     }
-    .member-homepage .column-25 {
-        margin-bottom: 1.5em;
+    &__video {
+        .grid {
+            display: flex;
+            margin: 0;
+
+            flex-wrap: wrap;
+        }
+        .column {
+            &:nth-child(1) {
+                width: calc(100% - 400px);
+
+                @media ( max-width: 960px) {
+                    width: 100%;
+                }
+            }
+            &:nth-child(2) {
+                width: 400px;
+                padding-left: 25px;
+
+                @media ( max-width: 960px) {
+                    width: 100%;
+                    padding-left: 0;
+                }
+            }
+        }
+
+        .inner-video {
+            box-shadow: 0 8px 19px -4px rgba(208, 204, 204, .3);
+            @media ( max-width: 960px) {
+                margin-bottom: 20px;
+            }
+        }
+        .heading {
+            display: inline-block;
+            margin: 0;
+
+            font-family: "Geogrotesque-SemiBold", sans-serif;
+            font-size: 25px;
+
+            text-transform: uppercase;
+
+            color: #002749;
+        }
+        .latest-uploads-heading {
+            position: relative;
+
+            display: inline-block;
+            margin: 0;
+
+            font-family: "Geogrotesque-Medium", sans-serif;
+            font-size: 19px;
+
+            text-align: right;
+            text-transform: uppercase;
+
+            color: #79c142;
+        }
     }
 }
-@media screen and ( max-width: 991px ) {
-    .member-homepage .heading {
-        margin-bottom: 1.2em;
-    }
-    .member-homepage .grid {
-        display: flex;
 
-        flex-wrap: wrap;
-    }
-    .member-homepage .column-25 {
-        width: 50%;
+.homepage {
+    &__latest-videos,
+    &__success-stories {
+        padding: 3rem 0;
 
-        flex: auto;
+        background: #f7f6f6;
+        .grid {
+            display: flex;
+            margin: 0 -10px;
+
+            flex-wrap: wrap;
+        }
+        .column {
+            width: 25%;
+            padding: 0 12px;
+            margin-bottom: 25px;
+
+            @media ( max-width: 991px) {
+                width: 33.33333%;
+            }
+            @media ( max-width: 767px) {
+                width: 50%;
+            }
+            @media ( max-width: 380px) {
+                width: 100%;
+            }
+        }
+        .single-post {
+            transition: box-shadow .3s ease;
+
+            border-bottom-right-radius: 4px;
+            border-bottom-left-radius: 4px;
+            background: #fff;
+            box-shadow: 0 1px 8px -2px rgba(204, 200, 200, .5);
+            &:hover {
+                box-shadow: 0 3px 18px -2px rgba(204, 200, 200, .5);
+            }
+        }
+        .single-post img {
+            width: 100%;
+        }
+        .video-details {
+            position: relative;
+
+            display: flex;
+            min-height: 145px;
+            padding: 10px;
+
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+
+            flex-wrap: wrap;
+        }
+        .video-details > div {
+            width: 100%;
+        }
+        .name {
+            margin-bottom: 35px;
+
+            font-family: "Geogrotesque-SemiBold", sans-serif;
+            font-size: 19px;
+            line-height: 1.2;
+
+            a {
+                color: #002749;
+
+                &:hover {
+                    color: #f15d22;
+                }
+            }
+        }
+        .content-footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            display: flex;
+            padding: 5px 10px 10px 10px;
+
+            justify-content: space-between;
+        }
+        .presenter,
+        .presenter a {
+            display: inline-block;
+
+            font-size: 14px;
+            line-height: 1.1;
+
+            color: #827e7c;
+        }
+
+        .total-views {
+            width: 65px;
+
+            font-size: 14px;
+            line-height: 1;
+
+            text-align: right;
+
+            color: #9c9a9a;
+        }
+    }
+    &__success-stories {
+        background: #fff;
     }
 }
-@media screen and ( max-width: 767px ) {
-    .member-homepage .column-25,
-    .member-homepage .column-50 {
-        width: 100%;
+.homepage {
+    &__calendar {
+        .grid {
+            display: flex;
+
+            flex-wrap: wrap;
+            &__column {
+                display: flex;
+                width: 25%;
+                padding: 0 10px;
+                @media ( max-width: 991px ) {
+                    width: 50%;
+                }
+                @media ( max-width: 767px) {
+                    width: 50%;
+                    padding: 0 5px;
+                }
+                @media ( max-width: 380px) {
+                    width: 100%;
+                }
+            }
+        }
+        .single-date {
+            width: 100%;
+            margin-bottom: 15px;
+
+            border-radius: 5px;
+        }
+        .addeventatc {
+            display: block;
+            max-width: 175px;
+            margin: 0 auto;
+
+            font-family: "Geogrotesque-Bold", sans-serif;
+            font-weight: 500;
+
+            color: #fff !important;
+            border: 0;
+            background: #79c142 !important;
+            box-shadow: none !important;
+        }
+        .button {
+            display: block;
+            max-width: 160px;
+            margin: 0 auto;
+
+            background-color: #7ac943;
+        }
+        .calendar {
+            padding: 0;
+            margin-bottom: 10px;
+
+            text-align: center;
+
+            .date {
+                position: relative;
+
+                display: inline-block;
+                width: 50px;
+                margin: 5px 0;
+
+                box-shadow: 0 2px 10px #ddd;
+            }
+            .month {
+                display: block;
+                padding: 5px 0 3px 0;
+
+                font-family: "Geogrotesque-Medium", sans-serif;
+                font-size: .7em;
+
+                text-transform: uppercase;
+
+                color: #fff;
+                background-color: #002749;
+
+                &.no-date {
+                    background: #f15d22;
+                }
+            }
+            .day {
+                display: block;
+                padding: .4em .3em;
+
+                font-family: "Geogrotesque-Medium", sans-serif;
+                font-size: .8em;
+
+                background: #fff;
+            }
+            .year {
+                margin: 5px auto;
+
+                font-family: "Geogrotesque-SemiBold", sans-serif;
+
+                text-align: center;
+            }
+        }
+        .topic {
+            font-family: "Geogrotesque-SemiBold", sans-serif;
+            font-size: 21px;
+            line-height: 1;
+
+            text-align: center;
+        }
     }
 }
