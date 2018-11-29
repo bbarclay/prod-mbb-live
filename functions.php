@@ -274,7 +274,7 @@ function mbb_create_post_type() {
       ),
       'menu_position' => 16,
       'menu_icon' => 'dashicons-awards',
-      'public' => true,
+      'public' => false,
       'has_archive' => false,
       'rewrite' => array('slug' => 'tech-videos'),
     )
