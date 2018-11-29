@@ -319,3 +319,34 @@ function mbb_create_post_type() {
 
 }
 add_action( 'init', 'mbb_create_post_type' );
+
+
+function mybbp_child_register_relationships(){
+
+  p2p_register_connection_type( array(
+    'name'            => 'mybbp_video_to_summit',
+    'from'            => 'mybbp_video',
+    'to'              => 'mybbp_summit',
+    'reciprocal'      => true,
+    'can_create_post' => false,
+    'admin_column'    => 'from',
+    'sortable'        => 'to',
+    'title' => array(
+      'from' => 'Summit',
+      'to'   => 'Videos'
+    ),
+    'from_labels' => array(
+      'singular_name' => 'Video',
+      'search_items'  => 'Search videos',
+      'not_found'     => 'No videos found.',
+      'create'        => 'Add videos',
+    ),
+    'to_labels' => array(
+      'singular_name' => 'Summit',
+      'search_items'  => 'Search summit',
+      'not_found'     => 'No summit found.',
+      'create'        => 'Add to summit',
+    ),
+  ) );
+}
+add_action( 'p2p_init', 'mybbp_child_register_relationships' );
