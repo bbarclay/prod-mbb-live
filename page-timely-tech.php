@@ -72,7 +72,7 @@ get_header(); ?>
 					                   	  	 		<span class="detail">View Details</span>
 					                   	  	 	<?php endif; ?>		
 												<?php if( get_sub_field('link') ) : ?>
-				                   	  	 			<span class="website">Website: <a href="<?php get_sub_field('link'); ?>	" target="_blank">Open Link</a></span>
+				                   	  	 			<span class="website">Website: <a href="<?php echo get_sub_field('link'); ?>	" target="_blank">Open Link</a></span>
 												<?php endif; ?>
 												<?php if( get_sub_field('description') ) : ?>
 					                   	  	 		<div class="hide detail-content"><?php echo get_sub_field('description') ?></div> 
