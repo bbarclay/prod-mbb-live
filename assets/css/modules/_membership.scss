@@ -591,36 +591,12 @@
             }
         }
     }
-    .heading {
-        margin: 2em 0 .2em 0;
 
-        font-size: 1.2rem;
-
-        color: $secondary_color;
-    }
     .wrap-task {
         .extra-header {
             margin-bottom: 0;
 
             border: 0;
-        }
-        .todo-list {
-            padding: 20px;
-            margin-top: 5px;
-
-            border: 0;
-            background: #fbfbfb;
-
-            ul li {
-                border: 1px solid #efecec;
-                border-radius: 5px;
-                background: #fff;
-
-                > .content-holder {
-                    background: #fff;
-                    box-shadow: none;
-                }
-            }
         }
     }
 }

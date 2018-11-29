@@ -242,3 +242,80 @@ function mbb_allowed_dates() {
       return $days;  
 }
 
+function mbb_create_post_type() {
+  register_post_type( 'mybbp_timelytech',
+    array(
+      'labels' => array(
+        'name' => __( 'Timely Tech' ),
+        'singular_name' => __( 'Timely Tech' ),
+        'menu_name'             => 'Timely Tech',
+        'name_admin_bar'        => 'Timely Tech',
+        'archives'              => 'Timely Tech Archives',
+        'parent_item_colon'     => 'Parent Timely Tech:',
+        'all_items'             => 'All Timely Tech',
+        'add_new_item'          => 'Add New Timely Tech',
+        'add_new'               => 'Add Timely Tech',
+        'new_item'              => 'New Timely Tech',
+        'edit_item'             => 'Edit Timely Tech',
+        'update_item'           => 'Update Timely Tech',
+        'view_item'             => 'View Timely Tech',
+        'search_items'          => 'Search Timely Tech',
+        'not_found'             => 'Not found',
+        'not_found_in_trash'    => 'Not found in Trash',
+        'featured_image'        => 'Featured Image',
+        'set_featured_image'    => 'Set featured image',
+        'remove_featured_image' => 'Remove featured image',
+        'use_featured_image'    => 'Use as featured image',
+        'insert_into_item'      => 'Insert into timely tech',
+        'uploaded_to_this_item' => 'Uploaded to this timely tech',
+        'items_list'            => 'Timely Tech list',
+        'items_list_navigation' => 'Timely Tech list navigation',
+        'filter_items_list'     => 'Filter series list'
+      ),
+      'menu_position' => 16,
+      'menu_icon' => 'dashicons-awards',
+      'public' => true,
+      'has_archive' => false,
+      'rewrite' => array('slug' => 'tech-videos'),
+    )
+  );  
+  register_post_type( 'mybbp_summit',
+    array(
+      'labels' => array(
+        'name' => __( 'Summit' ),
+        'singular_name' => __( 'VA Summit' ),
+        'menu_name'             => 'Summit',
+        'name_admin_bar'        => 'VA Summit',
+        'archives'              => 'VA Summit Archives',
+        'parent_item_colon'     => 'Parent Summit:',
+        'all_items'             => 'All Summit',
+        'add_new_item'          => 'Add New Summit',
+        'add_new'               => 'Add Summit',
+        'new_item'              => 'New Summit',
+        'edit_item'             => 'Edit Summit',
+        'update_item'           => 'Update Summit',
+        'view_item'             => 'View Summit',
+        'search_items'          => 'Search Summit',
+        'not_found'             => 'Not found',
+        'not_found_in_trash'    => 'Not found in Trash',
+        'featured_image'        => 'Featured Image',
+        'set_featured_image'    => 'Set featured image',
+        'remove_featured_image' => 'Remove featured image',
+        'use_featured_image'    => 'Use as featured image',
+        'insert_into_item'      => 'Insert into summit',
+        'uploaded_to_this_item' => 'Uploaded to this summit',
+        'items_list'            => 'Summit list',
+        'items_list_navigation' => 'Summit list navigation',
+        'filter_items_list'     => 'Filter series list'
+      ),
+      'menu_position' => 17,
+      'menu_icon' => 'dashicons-clipboard',
+      'public' => true,
+      'has_archive' => true,
+      'rewrite' => array('slug' => 'va-summit'),
+      'capability_type'       => 'page',
+    )
+  );
+
+}
+add_action( 'init', 'mbb_create_post_type' );
