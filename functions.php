@@ -311,7 +311,7 @@ function mbb_create_post_type() {
       'menu_position' => 17,
       'menu_icon' => 'dashicons-clipboard',
       'public' => true,
-      'has_archive' => true,
+      'has_archive' => false,
       'rewrite' => array('slug' => 'va-summit'),
       'capability_type'       => 'page',
     )
