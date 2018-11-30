@@ -104,13 +104,13 @@ get_header(); ?>
 	                        	if( $query->have_posts() ) : ?>
 									<div class="video-item">
 									 
-			                                <?php while( $query->have_posts() ) : $query->the_post(); 
+			                                <?php while( $query->have_posts() ) : $query->the_post(); $count++;
 
 												$video_link 	= get_field('video', $query->ID, false );
 												$first_position = strpos( $video_link, "medias/");
 										        $video_id 		= substr($video_link, ( $first_position + 7 ), 10);
 			                                ?>
-			                                	   <div class="item-section" id="<?php echo GET_THE_ID(); ?>">
+			                                	   <div class="item-section <?php echo ( $count == 1) ? 'active': ''; ?>" id="<?php echo GET_THE_ID(); ?>">
 			                                	       <div class="left-item">
 			                                	       		<div class="video-thumbnail" id="<?php echo $video_id ?>">
 			                                	       			<div class="fa-spinner-wrap"><span class="fa fa-spin  fa-spinner"></span></div>
@@ -150,7 +150,8 @@ get_header(); ?>
 
 			$(document).on('click', '.btn-play', function(){
 
-				var videoWrap = $('#wistiaEmbed');		
+				var videoWrap = $('#wistiaEmbed');	
+					
 
 				var video_player = videoWrap.find('.wistia_embed');
 				var video_id = video_player.attr('id');
@@ -278,6 +279,13 @@ get_header(); ?>
 					videoWrap.html('');
 					videoWrap.removeAttr('class');
 					videoWrap.html('<div id="wistia_'+ id+'" class="wistia_embed" style="width:100%;height:100%;">&nbsp;</div>');
+					var video_listing = $('.timely-tech-section .video-item .item-section');
+					
+					//remove active video list
+					video_listing.removeClass('active');
+
+					$(this).closest('.item-section').addClass('active');
+
 
 					//Clear Video list
 					video_list.html('<div class="loader-wrapper"><div class="inner-wrap">Please wait....</div></div>');
