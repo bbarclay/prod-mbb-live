@@ -126,8 +126,8 @@ get_header(); ?>
 																   <?php endwhile; ?>
 																   </ul>
 		                                                       </div>
-														   <?php endif; ?>	
-														   <span class="date"><?php echo get_the_date() ?></span>
+														   <?php endif; $date = strtotime( get_the_date("Y-m-d") ); ?>	
+														   <span class="date"><?php echo date( "F Y", $date ) ?></span>
 			                                	       </div>
 												   </div>
 											<?php endwhile; ?>
