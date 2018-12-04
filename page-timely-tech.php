@@ -22,7 +22,6 @@ get_header(); ?>
 					 	    
 					 	 	<?php 	$args = array(
 		                        		'post_type' => 'mybbp_timelytech',
-		                        		'post_status' => 'publish',
 		                        		'order' => 'DESC',
 		                        		'orderby' => 'date',	
 		                        		'posts_per_page' => 1
@@ -49,8 +48,8 @@ get_header(); ?>
 
 					 	     	</div>
 					 	     </div>
-
-					 	     <h3>In this session you'll learn...</h3>
+								
+					 	    <h3>In this session you'll learn...</h3>
 							
 							<?php if( have_rows('list', $query->ID ) ) : ?>
 						 	    <ul class="timeline-list">
