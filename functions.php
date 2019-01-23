@@ -182,9 +182,14 @@ function mbb_is_silver() {
 function mbb_customer_type() {
 
     return $customer_type =  do_shortcode('[mbb_get_customer_type]'); 
-
   
 }
+
+function add_last_nav_item($items) {
+  $item = do_shortcode('[mbb_watch_live]');
+  return $items .= $item;
+}
+add_filter('wp_nav_menu_items','add_last_nav_item');
 
 /**
  * Check the customer type and 
