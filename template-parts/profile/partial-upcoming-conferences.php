@@ -47,7 +47,7 @@
 
     	  		  	while( have_rows($show_dates, $frontpage_id) ) : the_row(); $month = get_sub_field('month'); 
 
-    	  		  		echo $is_annual = ( get_sub_field('annual_conference') ) ? get_sub_field('annual_conference')  : false;
+    	  		  		$is_annual = ( get_sub_field('annual_conference') ) ? get_sub_field('annual_conference')  : false;
     	  		  		$tbd = get_sub_field('tbd');  ?>
 
                     	<div class="col-sm-3">
