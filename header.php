@@ -18,7 +18,7 @@
 					<div class="grid">
 						<div class="grid__column  grid__column--7  grid__column--m-4  grid__column--l-3">
 							<a href="<?php echo home_url(); ?>" title="Return to homepage">
-								<img src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" class="logo">
+								<img src="https://my.businessblueprint.com/wp-content/themes/prod-mbb-live/assets/images/logo.svg" class="logo">
 							</a>
 						</div>
 
