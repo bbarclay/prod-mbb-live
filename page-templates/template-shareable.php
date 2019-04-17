@@ -35,7 +35,7 @@ get_header(); ?>
                                     'order'          => 'ASC',
                                     //'post_status'    => 'publish',
                                     'post_parent'    => 0,  
-									'posts_per_page'	=> 3,  
+									'posts_per_page'	=> 18,  
 									'orderby'			=> 'menu_order',
                                     ));
 							?>
