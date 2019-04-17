@@ -32,11 +32,13 @@ get_header(); ?>
                                 query_posts(array(
                                     'post_type' => 'shareable_files',
                                     'paged'          => $paged,
-                                    'order'          => 'ASC',
-                                    //'post_status'    => 'publish',
+                                    'order'          => 'DESC',
                                     'post_parent'    => 0,  
-									'posts_per_page'	=> 18,  
-									'orderby'			=> 'menu_order',
+									'posts_per_page'	=> 18, 
+									'orderby' => 'meta_value',
+                                    'meta_key' => 'date_submission', 
+									//'post_status'    => 'publish',
+									//'orderby'			=> 'menu_order',
                                     ));
 							?>
                                
@@ -47,7 +49,14 @@ get_header(); ?>
 					<div class="column">
 						<div class="single-post">	
 							<div class="video-thumbnail">
-								<img src="<?php the_field('thumbnail'); ?>" class="share-thumb">
+								<?php 
+									$image = get_field('thumbnail');
+									$size = 'shareable_files'; // (thumbnail, medium, large, full or custom size)
+										if( $image ) {
+											echo wp_get_attachment_image( $image, $size );
+										}
+
+								?>
 								<div class="doc-type">
 <a href="<?php the_field('link'); ?>" title="download <?php the_field('file_type'); ?> - <?php the_title(); ?>" class="share-hover" target="new" download>
 <?php if (get_field('file_type') == 'document') { ?>
@@ -106,10 +115,6 @@ get_header(); ?>
 	}
 .clear-share{width:100%;}
 .share-post{position:relative}
-.share-name{
-	height:35px;
-	margin-bottom:0.5em !important
-}
 .doc-type{
 	transition: all .2s ease-in-out; 
 	position:absolute;
@@ -119,7 +124,7 @@ get_header(); ?>
 	right:-20px;
 }
 
-img.share-thumb{
+img.size-shareable_files{
 	border-bottom: 4px solid #001e36;
     border-image: linear-gradient(90deg, rgba(0,30,54,1) 0%, rgba(0,169,198,1) 100%);
     border-image-slice: 1;
@@ -162,6 +167,10 @@ img.share-thumb{
 @media (min-width: 768px){
 	.homepage__latest-videos .column, .homepage__success-stories .column {
 		width: 33.333%;
+	}
+	.share-name{
+		height:35px;
+		margin-bottom:0.8em !important
 	}
 }
 </style>

@@ -22,6 +22,7 @@ add_filter( 'query_vars', 'mbb_query_vars_filter' );
 
 function mbb_image_size() {
 	add_image_size( 'custom-size', 250, 250, true );
+	add_image_size( 'shareable_files', 330, 188, true );
 }
 
 
@@ -327,20 +328,20 @@ function mbb_create_post_type() {
  register_post_type( 'shareable_files',
     array(
       'labels' => array(
-        'name' => __( 'Shareable Files' ),
-        'singular_name' => __( 'Shareable File' ),
-        'menu_name'             => 'Shareable File',
-        'name_admin_bar'        => 'Shareable File',
-        'archives'              => 'Shareable File Archives',
-        'parent_item_colon'     => 'Parent Shareable File:',
-        'all_items'             => 'All Shareable File',
-        'add_new_item'          => 'Add New Shareable File',
-        'add_new'               => 'Add Shareable File',
-        'new_item'              => 'New Shareable File',
-        'edit_item'             => 'Edit Shareable File',
-        'update_item'           => 'Update Shareable File',
-        'view_item'             => 'View Shareable File',
-        'search_items'          => 'Search Shareable File',
+        'name' => __( 'Shareable System' ),
+        'singular_name' => __( 'Shareable System' ),
+        'menu_name'             => 'Shareable System',
+        'name_admin_bar'        => 'Shareable System',
+        'archives'              => 'Shareable System Archives',
+        'parent_item_colon'     => 'Parent Shareable System:',
+        'all_items'             => 'All Shareable System',
+        'add_new_item'          => 'Add New Shareable System',
+        'add_new'               => 'Add Shareable System',
+        'new_item'              => 'New Shareable System',
+        'edit_item'             => 'Edit Shareable System',
+        'update_item'           => 'Update Shareable System',
+        'view_item'             => 'View Shareable System',
+        'search_items'          => 'Search Shareable System',
         'not_found'             => 'Not found',
         'not_found_in_trash'    => 'Not found in Trash',
         'featured_image'        => 'Featured Image',
@@ -349,14 +350,14 @@ function mbb_create_post_type() {
         'use_featured_image'    => 'Use as featured image',
         'insert_into_item'      => 'Insert into Shareable File',
         'uploaded_to_this_item' => 'Uploaded to this Shareable File',
-        'items_list'            => 'Shareable File list',
-        'items_list_navigation' => 'Shareable File list navigation',
+        'items_list'            => 'Shareable System list',
+        'items_list_navigation' => 'Shareable System list navigation',
         'filter_items_list'     => 'Filter file list'
       ),
       'menu_position' => 17,
       'menu_icon' => 'dashicons-image-rotate-right',
       'public' => true,
-      'has_archive' => true,
+      'has_archive' => false,
       'rewrite' => array('slug' => 'shareable-files'),
       'capability_type'       => 'page',
     )
