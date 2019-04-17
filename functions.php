@@ -322,9 +322,60 @@ function mbb_create_post_type() {
       'capability_type'       => 'page',
     )
   );
-
+  
+// Start Shareable CPT  
+ register_post_type( 'shareable_files',
+    array(
+      'labels' => array(
+        'name' => __( 'Shareable Files' ),
+        'singular_name' => __( 'Shareable File' ),
+        'menu_name'             => 'Shareable File',
+        'name_admin_bar'        => 'Shareable File',
+        'archives'              => 'Shareable File Archives',
+        'parent_item_colon'     => 'Parent Shareable File:',
+        'all_items'             => 'All Shareable File',
+        'add_new_item'          => 'Add New Shareable File',
+        'add_new'               => 'Add Shareable File',
+        'new_item'              => 'New Shareable File',
+        'edit_item'             => 'Edit Shareable File',
+        'update_item'           => 'Update Shareable File',
+        'view_item'             => 'View Shareable File',
+        'search_items'          => 'Search Shareable File',
+        'not_found'             => 'Not found',
+        'not_found_in_trash'    => 'Not found in Trash',
+        'featured_image'        => 'Featured Image',
+        'set_featured_image'    => 'Set featured image',
+        'remove_featured_image' => 'Remove featured image',
+        'use_featured_image'    => 'Use as featured image',
+        'insert_into_item'      => 'Insert into Shareable File',
+        'uploaded_to_this_item' => 'Uploaded to this Shareable File',
+        'items_list'            => 'Shareable File list',
+        'items_list_navigation' => 'Shareable File list navigation',
+        'filter_items_list'     => 'Filter file list'
+      ),
+      'menu_position' => 17,
+      'menu_icon' => 'dashicons-image-rotate-right',
+      'public' => true,
+      'has_archive' => true,
+      'rewrite' => array('slug' => 'shareable-files'),
+      'capability_type'       => 'page',
+    )
+  ); 
+// END Shareable CPT  
 }
 add_action( 'init', 'mbb_create_post_type' );
+
+/**
+ * Order Post Attribute 
+ */ 
+add_action( 'admin_init', 'layers_add_post_menu_order' );
+function layers_add_post_menu_order() {
+   add_post_type_support( 'shareable_files', 'page-attributes' );
+}
+
+
+
+
 
 
 function mybbp_child_register_relationships(){
