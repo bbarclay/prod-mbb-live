@@ -352,7 +352,8 @@ function mbb_create_post_type() {
         'uploaded_to_this_item' => 'Uploaded to this Shareable File',
         'items_list'            => 'Shareable System list',
         'items_list_navigation' => 'Shareable System list navigation',
-        'filter_items_list'     => 'Filter file list'
+        'filter_items_list'     => 'Filter file list',
+		'exclude_from_search' 	=> true,
       ),
       'menu_position' => 17,
       'menu_icon' => 'dashicons-image-rotate-right',
@@ -373,6 +374,15 @@ add_action( 'admin_init', 'layers_add_post_menu_order' );
 function layers_add_post_menu_order() {
    add_post_type_support( 'shareable_files', 'page-attributes' );
 }
+// Redirect all Single SSC
+add_action( 'template_redirect', 'redirect_post_type_single' );
+function redirect_post_type_single(){
+    if ( ! is_singular( 'shareable_files' ) )
+        return;
+    wp_redirect( get_page_link( 65343 ), 301 );
+    exit;
+}
+
 
 
 
