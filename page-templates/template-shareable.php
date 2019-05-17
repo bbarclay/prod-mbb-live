@@ -51,7 +51,7 @@ get_header(); ?>
 							<div class="video-thumbnail">
 								<?php 
 									$image = get_field('thumbnail');
-									$size = 'shareable_files'; // (thumbnail, medium, large, full or custom size)
+									$size = 'shareable_files'; 
 										if( $image ) {
 											echo wp_get_attachment_image( $image, $size );
 										}
@@ -85,7 +85,6 @@ get_header(); ?>
                                 </div>
 								<div class="content-footer">
                                 	<div class="presenter"><?php the_field('submitted_by'); ?></div>
-                                    <div class="presenter"><?php the_field('date_submission'); ?></div>
                             	</div>								
 							</div><!-- video-details -->
 						</div><!-- single-post -->
@@ -124,6 +123,8 @@ get_header(); ?>
 	right:-20px;
 }
 
+.share-name{font-size:1.2em !important;}
+
 img.size-shareable_files{
 	border-bottom: 4px solid #001e36;
     border-image: linear-gradient(90deg, rgba(0,30,54,1) 0%, rgba(0,169,198,1) 100%);
@@ -141,8 +142,9 @@ img.size-shareable_files{
 	overflow:visible;
 }
 .share-desc{
-	height:80px;
+	height:55px;
 	overflow-y: auto;
+	margin-top:15px;
 	margin-bottom:3em;
 	font-size:0.8em;
 }

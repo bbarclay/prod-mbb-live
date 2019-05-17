@@ -367,9 +367,7 @@ function mbb_create_post_type() {
 }
 add_action( 'init', 'mbb_create_post_type' );
 
-/**
- * Order Post Attribute 
- */ 
+// Order SSC posts 
 add_action( 'admin_init', 'layers_add_post_menu_order' );
 function layers_add_post_menu_order() {
    add_post_type_support( 'shareable_files', 'page-attributes' );
