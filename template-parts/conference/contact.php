@@ -10,7 +10,7 @@
 					<div class="info">
 						<div class="info-left">
 							<?php echo wp_get_attachment_image( get_sub_field('image'), 'full' ) ?>
-							<div class="name" id="">General Manager</div>
+							<div class="name">General Manager</div>
 						</div>
 						<div class="bio info-right">
 							<?php echo get_sub_field('description') ?>
