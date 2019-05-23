@@ -142,7 +142,7 @@ img.size-shareable_files{
 	overflow:visible;
 }
 .share-desc{
-	height:55px;
+	height:40px;
 	overflow-y: auto;
 	margin-top:15px;
 	margin-bottom:3em;
